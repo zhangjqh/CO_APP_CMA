@@ -56,7 +56,7 @@ public class MutproductqueryctxExtendController extends MutproductqueryctxContro
 	    } 
 	    argsMap.remove("orderby");
     	argsMap.put("orderby", new String[]{orderby,orderbytype});
-    	String appid = "38300306"; 
+    	String appid = IMutiProductQueryConst.APPID;
 		String serviceid = "getProductListByPk_factoryAndAccepriod";
 		
 		//表头字段(工厂期间)
@@ -89,10 +89,7 @@ public class MutproductqueryctxExtendController extends MutproductqueryctxContro
 				visibleLoadMore = "false";
 			}
 			json.put("visibleLoadMore", visibleLoadMore);
-			//JSONObject chartDataObj = new JSONObject();
-//			JSONArray datalist = new JSONArray();
 			JSONArray productlist = new JSONArray();
-//			int graphlen = 6;//柱状图显示个数
 			for (int i = startline ; i <= arrLen; i++) {
 				Map<String,String> map = entryList.get(i - 1);
 				JSONObject productdata = new JSONObject();
@@ -101,32 +98,21 @@ public class MutproductqueryctxExtendController extends MutproductqueryctxContro
 				productdata.put("pk_material", map.get("pk_material"));
 				productdata.put("code",map.get("code"));
 				productdata.put("name", map.get("name"));
-				productdata.put("quantity",CMMobileNumberFormatUtils.getInstance().format(map.get("quantity")));
-				productdata.put("total", CMMobileNumberFormatUtils.getInstance().format(map.get("total")));
+				String quantity = CMMobileNumberFormatUtils.getInstance().format(map.get("quantity"));
+				productdata.put("quantity",quantity);
+				String total = CMMobileNumberFormatUtils.getInstance().format(map.get("total"));
+				productdata.put("total", total);
 				productdata.put("currtype", map.get("currtype"));
-				productdata.put("price", CMMobileNumberFormatUtils.getInstance().format(map.get("price")));
+				String price = CMMobileNumberFormatUtils.getInstance().format(map.get("price"));
+				productdata.put("price", price);
 				productdata.put("mesadoc", map.get("mesadoc"));
 				productdata.put("currentState", map.get("currentState"));
+				productdata.put("quantityshowname", "产量:" + quantity + map.get("mesadoc"));
+				productdata.put("priceshowname", "单位成本:" + map.get("currtype") + price);
 				productlist.put(productdata);
-				
-//				if (i <= graphlen){
-//					JSONObject entrydata = new JSONObject();//构造图表数据
-//					entrydata.put("key", map.get("code"));
-//					entrydata.put("value", map.get("price"));
-//					datalist.put(entrydata);
-//				}
 			}
 			
 			json.put("productlist", productlist);
-			
-//			chartDataObj.put("data", datalist);
-//			chartDataObj.put("seriseName", "多产品对比");
-//			chartDataObj.put("chartType", "0");
-//			JSONArray chartData = new JSONArray();
-//			chartData.put(chartDataObj);
-//			JSONObject charViewData = new JSONObject();
-//			charViewData.put("ChartData", chartData);
-//			json.put("charViewData", charViewData);
 			json.put("lastusedfactory", argsMap.get("pk_factory"));
 			return json.toString();
 		}catch(Exception e){
@@ -187,12 +173,16 @@ public class MutproductqueryctxExtendController extends MutproductqueryctxContro
     			productdata.put("pk_material", map.get("pk_material"));
     			productdata.put("code",map.get("code"));
     			productdata.put("name", map.get("name"));
-    			productdata.put("quantity",CMMobileNumberFormatUtils.getInstance().format(map.get("quantity")));
+    			String quantity = CMMobileNumberFormatUtils.getInstance().format(map.get("quantity"));
+    			productdata.put("quantity",quantity);
     			productdata.put("total", CMMobileNumberFormatUtils.getInstance().format(map.get("total")));
     			productdata.put("currtype", map.get("currtype"));
-    			productdata.put("price", CMMobileNumberFormatUtils.getInstance().format(map.get("price")));
+    			String price = CMMobileNumberFormatUtils.getInstance().format(map.get("price"));
+    			productdata.put("price", price);
     			productdata.put("mesadoc", map.get("mesadoc"));
     			productdata.put("currentState", map.get("currentState"));
+    			productdata.put("quantityshowname", "产量:" + quantity + map.get("mesadoc"));
+				productdata.put("priceshowname", "单位成本:" + map.get("currtype") + price);
     			productlist.put(productdata);
     		}
     		json.put("productlist", productlist);
@@ -249,12 +239,16 @@ public class MutproductqueryctxExtendController extends MutproductqueryctxContro
 			productdata.put("pk_material", map.get("pk_material"));
 			productdata.put("code",map.get("code"));
 			productdata.put("name", map.get("name"));
-			productdata.put("quantity",CMMobileNumberFormatUtils.getInstance().format(map.get("quantity")));
+			String quantity = CMMobileNumberFormatUtils.getInstance().format(map.get("quantity"));
+			productdata.put("quantity",quantity);
 			productdata.put("total", CMMobileNumberFormatUtils.getInstance().format(map.get("total")));
 			productdata.put("currtype", map.get("currtype"));
-			productdata.put("price", CMMobileNumberFormatUtils.getInstance().format(map.get("price")));
+			String price = CMMobileNumberFormatUtils.getInstance().format(map.get("price"));
+			productdata.put("price", price);
 			productdata.put("mesadoc", map.get("mesadoc"));
 			productdata.put("currentState", map.get("currentState"));
+			productdata.put("quantityshowname", "产量:" + quantity + map.get("mesadoc"));
+			productdata.put("priceshowname", "单位成本:" + map.get("currtype") + price);
 			productlist.put(productdata);
 		}
 		json.put("productlist", productlist);

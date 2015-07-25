@@ -1,122 +1,57 @@
+//JavaScript Framework 2.0 Code
+try{
 Type.registerNamespace('com.ump.productquery.mutproductviewController');
 com.ump.productquery.mutproductviewController = function() {
-
+    com.ump.productquery.mutproductviewController.initializeBase(this);
+    this.initialize();
 }
-function com$ump$productquery$mutproductviewController$initialize(ctx){
-    //your logic code below...
-    //demo code : var companyEnity = ctx.entity();
-    //demo code : var departmentEntity = companyEnity.field("depts");
-    //demo code : var employeeEntity = departmentEntity.get("empls");
-    //demo code : companyEnity.attachEvent("onchange", "name", onchange_handler1);
-    //demo code : departmentEntity.attachEvent("onchange", "dname", onchange_handler2);
-    //demo code : employeeEntity.attachEvent("onchange", "ename", onchange_handler3);
-    //yon can attach event on the entity object...
+function com$ump$productquery$mutproductviewController$initialize(){
+    //you can programing by $ctx API
+    //get the context data through $ctx.get()
+    //set the context data through $ctx.push(json)
+    //set the field of the context through $ctx.put(fieldName, fieldValue)
+    //get the parameter of the context through $ctx.param(parameterName)
+    //Demo Code:
+    //    var str = $ctx.getString();      //获取当前Context对应的字符串
+    //    alert($ctx.getString())          //alert当前Context对应的字符串
+    //    var json = $ctx.getJSONObject(); //获取当前Context，返回值为json
+    //    json["x"] = "a";        //为当前json增加字段
+    //    json["y"] = [];           //为当前json增加数组
+    //    $ctx.push(json);            //设置context，并自动调用数据绑定
+    //    
+    //    put方法需手动调用databind()
+    //    var x = $ctx.get("x");    //获取x字段值
+    //    $ctx.put("x", "b");     //设置x字段值
+    //    $ctx.put("x", "b");     //设置x字段值
+    //    $ctx.databind();            //调用数据绑定才能将修改的字段绑定到控件上
+    //    var p1 = $param.getString("p1");   //获取参数p2的值，返回一个字符串
+    //    var p2 = $param.getJSONObject("p2");   //获取参数p3的值，返回一个JSON对象
+    //    var p3 = $param.getJSONArray("p3");   //获取参数p1的值，返回一个数组
+    
+    //your initialize code below...
     
 }
-function com$ump$productquery$mutproductviewController$UMonInit(ctx){
-    //your logic code below...
-    //you can get the current context by $context or the parameter[ctx]
-    //demo code : $context.get("a")
-    //demo code : $context.get("cust").get("ca")
-    //demo code : $context.get("lines").get(0,"la")
-    //demo code : $context.get("lines").get(0,"details").get(0,"da")
 
+function isEmpty(str){
+	return (typeof(str) == 'undefined' || str == null || str =="");
 }
-function com$ump$productquery$mutproductviewController$UMonLoad(ctx){
-    //your logic code below...
-    //you can get the current context by $context or the parameter[ctx]
-    //demo code : $context.get("a")
-    //demo code : $context.get("cust").get("ca")
-    //demo code : $context.get("lines").get(0,"la")
-    //demo code : $context.get("lines").get(0,"details").get(0,"da")
-
+    
+function com$ump$productquery$mutproductviewController$evaljs(js){
+    eval(js)
 }
-function com$ump$productquery$mutproductviewController$UMonUnload(ctx){
-    //your logic code below...
-    //you can get the current context by $context or the parameter[ctx]
-    //demo code : $context.get("a")
-    //demo code : $context.get("cust").get("ca")
-    //demo code : $context.get("lines").get(0,"la")
-    //demo code : $context.get("lines").get(0,"details").get(0,"da")
-
-}
-function com$ump$productquery$mutproductviewController$UMonComplete(ctx){
-    //your logic code below...
-    //you can get the current context by $context or the parameter[ctx]
-    //demo code : $context.get("a")
-    //demo code : $context.get("cust").get("ca")
-    //demo code : $context.get("lines").get(0,"la")
-    //demo code : $context.get("lines").get(0,"details").get(0,"da")
-
-}
-function com$ump$productquery$mutproductviewController$UMonDataBinding(ctx){
-    //your logic code below...
-    //you can get the current context by $context or the parameter[ctx]
-    //demo code : $context.get("a")
-    //demo code : $context.get("cust").get("ca")
-    //demo code : $context.get("lines").get(0,"la")
-    //demo code : $context.get("lines").get(0,"details").get(0,"da")
-
-}
-function com$ump$productquery$mutproductviewController$setmonth(ctx){
-	//设置期间的值
-	
-	/*var json = ctx.unload();
-	var pk_accperiodmonth = json["pk_accperiodmonth"];
-	var yearmonth = json["yearmonth"];
-	var pk_factory = ctx.param("pk_factory");
-	var factoryname = ctx.param("factoryname");
-	var orderby = ctx.param("orderby");
-	
-	var params = {
-				  "viewid":"com.ump.productquery.MutproductqueryctxExtendController",
-				  "action":"getProductListByPk_factoryAndAccepriod",
-				  "startline":1,
-				  "count":20,
-				  "pk_factory":pk_factory,
-				  "factoryname":factoryname,
-				  "pk_accperiodmonth":pk_accperiodmonth,
-				  "yearmonth":yearmonth,
-				  "orderby":orderby};
-	$service.call("UMList.getFirstPage",jsonToString(params),true);*/
-}
-function com$ump$productquery$mutproductviewController$loadview(ctx){
-	var from = ctx.param("from");
-	if ("login" == from){
-		_$sys.callAction('getDefaultData');
-	} else if ("graph" == from){
-		/*var pk_factory = ctx.param("pk_factory");
-		var factoryname = ctx.param("factoryname");
-		var pk_accperiodmonth = ctx.param("pk_accperiodmonth");
-		var yearmonth = ctx.param("yearmonth");
-		var params={
-		"viewid":"com.ump.productquery.MutproductqueryctxExtendController",
-		"action":"getProductListByPk_factoryAndAccepriod",
-		"autoDataBinding":"true",
-		"startline":"1",
-		"count":"20",
-		"pk_factory":pk_factory,
-		"factoryname":factoryname,
-		"pk_accperiodmonth":pk_accperiodmonth,
-		"yearmonth":yearmonth,
-		"orderby":"0"
-		}
-		$service.call("UMService.callAction",jsonToString(params), true);*/
-		_$sys.callAction('syncGraphData');
-	}
-	
-}
-function com$ump$productquery$mutproductviewController$seticonsrc(ctx){
-	var json = ctx.unload();
+function com$ump$productquery$mutproductviewController$setIcon(sender,args){
+	var json = $ctx.getJSONObject();
 	var error = json["error_message"];
-	if (error != null && error != ""){
-		alert(error);
+	if (!isEmpty(error)){
+		$toast(error);
 		json["error_message"]="";
-		ctx.load(json);
+		$ctx.push(json);
+		$js.hideLoadingBar();
 		return;
 	}
 	var productlistCtx = json["productlist"];
-	if(productlistCtx == null || productlistCtx == "undefined"){
+	if(isEmpty(productlistCtx)){
+		$js.hideLoadingBar();
 		return;
 	}
 	for (var i = 0; i < productlistCtx.length; i++) {
@@ -131,13 +66,12 @@ function com$ump$productquery$mutproductviewController$seticonsrc(ctx){
 	var orderbytype = json["orderbytype"];
 	
 	var visibleLoadMore=json["visibleLoadMore"];
-	$controls.set("listview0","visibleLoadMore",visibleLoadMore);
-	
+	$id('listview0').set("visibleLoadMore", visibleLoadMore);
 	//将最近使用的工厂写到缓存中
 	var lastusedfactory = json["lastusedfactory"];
 	var value=$cache.read("lastusedfactory");
 	
-	if(typeof(value) != 'undefined' && value !=null && value!=""){
+	if(!isEmpty(value)){
 		var arrayjson = stringToJSON(value);
 		var lastusedfactoryitems = arrayjson;
 		var newjsonarray=[];
@@ -182,42 +116,17 @@ function com$ump$productquery$mutproductviewController$seticonsrc(ctx){
 		lastusedfactoryArray.push(lastusedfactoryitem);
 		$cache.write("lastusedfactory", lastusedfactoryArray);
 	}
-	ctx.load(json); 
-	return;
+	$ctx.push(json);
+	$js.hideLoadingBar();
 }
-function com$ump$productquery$mutproductviewController$setOrderByPrice(){
-	var orderbytype = $context.get("orderbytype");
-	if ("asc" == orderbytype){
-		_$sys.callAction('setordertype_down');
-	} else if ("desc" == orderbytype){
-		_$sys.callAction('setordertype_up');
-	}
-	_$sys.callAction('setpriceorder');
-	_$sys.callAction('getProductListFirstPage');
+function com$ump$productquery$mutproductviewController$onload(sender, args){
+	$js.hideLoadingBar();
+	$js.showLoadingBar();
+	_$sys.callAction('loadViewPage');
 }
-function com$ump$productquery$mutproductviewController$setOrderBySeq(){
-	var orderbytype = $context.get("orderbytype");
-	if ("asc" == orderbytype){
-		_$sys.callAction('setordertype_down');
-	} else if ("desc" == orderbytype){
-		_$sys.callAction('setordertype_up');
-	}
-	_$sys.callAction('setseqorder');
-	_$sys.callAction('getProductListFirstPage');
-}
-function com$ump$productquery$mutproductviewController$setOrderByCode(){
-	var orderbytype = $context.get("orderbytype");
-	if ("asc" == orderbytype){
-		_$sys.callAction('setordertype_down');
-	} else if ("desc" == orderbytype){
-		_$sys.callAction('setordertype_up');
-	}
-	_$sys.callAction('setcodeorder');
-	_$sys.callAction('getProductListFirstPage');
-}
-
-function com$ump$productquery$mutproductviewController$concern(ctx){
-	var productlist = ctx.param("productlist");
+function com$ump$productquery$mutproductviewController$concern(sender,args){
+	var row = $id('listview0').get("row");
+	var productlist = stringToJSON(row);
 	var params = {
 		viewid : "com.ump.productquery.MutproductqueryctxExtendController",
 		action : "doOrCancelConcernProduct",
@@ -227,57 +136,40 @@ function com$ump$productquery$mutproductviewController$concern(ctx){
 	}
 	$service.call('UMService.callAction',jsonToString(params),false);
 }
-function com$ump$productquery$mutproductviewController$updatebyuserid(ctx){
-	//根据全局变量中获取的用户ID初始化Home主页界面。
-	var uid = $ctx.getApp("userid");
-	
-	//如果在系统设置中退出了登录需要跳转到登陆页面
-	var from = ctx.param("from");
-	if(!uid || "" == uid || "exit"==from){
-		var open = {
-			isKeep : "false",
-			viewid : "com.ump.productquery.Productquery_login"
-		};
-	
-		var openJsonString = $jsonToString(open);
-			
-		UM_NativeCall.callService("UMView.open", openJsonString);		
-	}
-}
-function com$ump$productquery$mutproductviewController$opensortdropdownlist(ctx){
+function com$ump$productquery$mutproductviewController$openmenu(sender, args){
 	var dropdownlist =[];
 	var orderbypriceup={
-		action:"orderbypriceup",
+		action:"this.orderbypriceup()",
 		image:"asc.png",
 		name:"单位成本升序"
 	};
 	dropdownlist.push(orderbypriceup);
 	var orderbypricedown={
-		action:"orderbypricedown",
+		action:"this.orderbypricedown()",
 		image:"desc.png",
 		name:"单位成本降序"
 	};
 	dropdownlist.push(orderbypricedown);
 	var orderbysequp={
-		action:"orderbysequp",
+		action:"this.orderbysequp()",
 		image:"asc.png",
 		name:"变动比率升序"
 	};
 	dropdownlist.push(orderbysequp);
 	var orderbyseqdown={
-		action:"orderbyseqdown",
+		action:"this.orderbyseqdown()",
 		image:"desc.png",
 		name:"变动比率降序"
 	};
 	dropdownlist.push(orderbyseqdown);
 	var orderbycodeup={
-		action:"orderbycodeup",
+		action:"this.orderbycodeup()",
 		image:"asc.png",
 		name:"产品编码升序"
 	};
 	dropdownlist.push(orderbycodeup);
 	var orderbycodedown={
-		action:"orderbycodedown",
+		action:"this.orderbycodedown()",
 		image:"desc.png",
 		name:"产品编码降序"
 	};
@@ -290,90 +182,114 @@ function com$ump$productquery$mutproductviewController$opensortdropdownlist(ctx)
 		"background-image" : "dropdownlist.png"
 	};
 	var openJsonString = $jsonToString(params);
-	UM_NativeCall.callService("UMMenu.openDropDownList", openJsonString);	
+	UM_NativeCall.callService("UMMenu.openDropDownList", openJsonString);
 }
-function com$ump$productquery$mutproductviewController$orderbypriceup(ctx){
-	_$sys.callAction('setordertype_up');
-	_$sys.callAction('setpriceorder');
+function com$ump$productquery$mutproductviewController$orderbypriceup(sender,args){
+	var json = $ctx.getJSONObject();
+	json.orderby = 0;
+	json.orderbytype = "asc";
+	$ctx.push(json);
 	var sortbuttonui = $document.getElementById("imagebutton2");
 	sortbuttonui.setAttribute("value","成本");
 	sortbuttonui.setAttribute("color","#e50011");
 	sortbuttonui.setAttribute("font-pressed-color","#f2adb2");
-	//$controls.set("imagebutton2","color","#e50011");
 	sortbuttonui.setAttribute("icon-background-image","asc.png");
 	sortbuttonui.setAttribute("icon-pressed-image","asc.png");
+	$js.showLoadingBar();
 	_$sys.callAction('getProductListFirstPage');
 }
-function com$ump$productquery$mutproductviewController$orderbypricedown(ctx){
-	_$sys.callAction('setordertype_down');
-	_$sys.callAction('setpriceorder');
+function com$ump$productquery$mutproductviewController$orderbypricedown(sender,args){
+	var json = $ctx.getJSONObject();
+	json.orderby = 0;
+	json.orderbytype = "desc";
+	$ctx.push(json);
 	var sortbuttonui = $document.getElementById("imagebutton2");
 	sortbuttonui.setAttribute("value","成本");
 	sortbuttonui.setAttribute("color","#64c101");
 	sortbuttonui.setAttribute("font-pressed-color","#a2e1b7");
-	//$controls.set("imagebutton2","color","#C7F8C4");
 	sortbuttonui.setAttribute("icon-background-image","desc.png");
 	sortbuttonui.setAttribute("icon-pressed-image","desc.png");
+	$js.showLoadingBar();
 	_$sys.callAction('getProductListFirstPage');
 }
-function com$ump$productquery$mutproductviewController$orderbysequp(ctx){
-	_$sys.callAction('setordertype_up');
-	_$sys.callAction('setseqorder');
+function com$ump$productquery$mutproductviewController$orderbysequp(sender,args){
+	var json = $ctx.getJSONObject();
+	json.orderby = 1;
+	json.orderbytype = "asc";
+	$ctx.push(json);
 	var sortbuttonui = $document.getElementById("imagebutton2");
 	sortbuttonui.setAttribute("value","比率");
 	sortbuttonui.setAttribute("color","#e50011");
 	sortbuttonui.setAttribute("font-pressed-color","#f2adb2");
-	//$controls.set("imagebutton2","color","#e50011");
 	sortbuttonui.setAttribute("icon-background-image","asc.png");
 	sortbuttonui.setAttribute("icon-pressed-image","asc.png");
+	$js.showLoadingBar();
 	_$sys.callAction('getProductListFirstPage');
 }
-function com$ump$productquery$mutproductviewController$orderbyseqdown(ctx){
-	_$sys.callAction('setordertype_down');
-	_$sys.callAction('setseqorder');
+function com$ump$productquery$mutproductviewController$orderbyseqdown(sender,args){
+	var json = $ctx.getJSONObject();
+	json.orderby = 1;
+	json.orderbytype = "desc";
+	$ctx.push(json);
 	var sortbuttonui = $document.getElementById("imagebutton2");
 	sortbuttonui.setAttribute("value","比率");
 	sortbuttonui.setAttribute("color","#64c101");
 	sortbuttonui.setAttribute("font-pressed-color","#a2e1b7");
-	//$controls.set("imagebutton2","color","#C7F8C4");
 	sortbuttonui.setAttribute("icon-background-image","desc.png");
 	sortbuttonui.setAttribute("icon-pressed-image","desc.png");
+	$js.showLoadingBar();
 	_$sys.callAction('getProductListFirstPage');
-	
 }
-function com$ump$productquery$mutproductviewController$orderbycodeup(ctx){
-	_$sys.callAction('setordertype_up');
-	_$sys.callAction('setcodeorder');
+function com$ump$productquery$mutproductviewController$orderbycodeup(sender,args){
+	var json = $ctx.getJSONObject();
+	json.orderby = 2;
+	json.orderbytype = "asc";
+	$ctx.push(json);
 	var sortbuttonui = $document.getElementById("imagebutton2");
 	sortbuttonui.setAttribute("value","编码");
 	sortbuttonui.setAttribute("color","#e50011");
 	sortbuttonui.setAttribute("font-pressed-color","#f2adb2");
-	//$controls.set("imagebutton2","color","#e50011");
 	sortbuttonui.setAttribute("icon-background-image","asc.png");
 	sortbuttonui.setAttribute("icon-pressed-image","asc.png");
+	$js.showLoadingBar();
 	_$sys.callAction('getProductListFirstPage');
 }
-function com$ump$productquery$mutproductviewController$orderbycodedown(ctx){
-	_$sys.callAction('setordertype_down');
-	_$sys.callAction('setcodeorder');
+function com$ump$productquery$mutproductviewController$orderbycodedown(sender,args){
+	var json = $ctx.getJSONObject();
+	json.orderby = 2;
+	json.orderbytype = "desc";
+	$ctx.push(json);
 	var sortbuttonui = $document.getElementById("imagebutton2");
 	sortbuttonui.setAttribute("value","编码");
 	sortbuttonui.setAttribute("color","#64c101");
 	sortbuttonui.setAttribute("font-pressed-color","#a2e1b7");
-	//$controls.set("imagebutton2","color","#C7F8C4");
 	sortbuttonui.setAttribute("icon-background-image","desc.png");
 	sortbuttonui.setAttribute("icon-pressed-image","desc.png");
+	$js.showLoadingBar();
 	_$sys.callAction('getProductListFirstPage');
-	
 }
-function com$ump$productquery$mutproductviewController$openDetailCallBack(ctx){
+function com$ump$productquery$mutproductviewController$loadmyconcern(sender, args){
+	var json = $ctx.getJSONObject();
+	json.displaytype = 0;
+	$ctx.push(json);
+	$js.showLoadingBar();
+	_$sys.callAction('getProductListFirstPage');
+}
+function com$ump$productquery$mutproductviewController$loadall(sender, args){
+	var json = $ctx.getJSONObject();
+	json.displaytype = 1;
+	$ctx.push(json);
+	$js.showLoadingBar();
+	_$sys.callAction('getProductListFirstPage');
+}
+function com$ump$productquery$mutproductviewController$openDetailCallBack(sender,args){
 	//明细页返回主页，关注状态进行同步
-	var selectindex = ctx.param("selectindex");
-	var currentstate = ctx.param("currentstate");
-	var pk_material = ctx.param("pk_material");
-	var json = ctx.unload();
+	var selectindex = $param.getString("selectindex");
+	var currentstate = $param.getString("currentstate");
+	var pk_material = $param.getString("pk_material");
+	var json = $ctx.getJSONObject();
 	var productlistctx=json["productlist"];
-	if(productlistctx==null || typeof(productlistctx)=='undefined'){
+	if(isEmpty(productlistctx)){
 		return;
 	}
 	for (var i=0;i<productlistctx.length;i++){
@@ -389,121 +305,34 @@ function com$ump$productquery$mutproductviewController$openDetailCallBack(ctx){
 		}
 	}
 	json["productlist"]=productlistctx;
-	ctx.load(json);
-	
+	$ctx.push(json);
 }
-function com$ump$productquery$mutproductviewController$openAccperiodPicker(ctx){
-	var json = ctx.unload();
-	var currentyearmonth = ctx.param("currentyearmonth");
-	var strs = currentyearmonth.split("-");
-	var currentyear=parseInt(strs[0],10);
-	var currentmonth=parseInt(strs[1],10);
+function com$ump$productquery$mutproductviewController$updatebyuserid(sender,args){
+	//根据全局变量中获取的用户ID初始化Home主页界面。
+	var uid = $ctx.getApp("userid");
+	//如果在系统设置中退出了登录需要跳转到登陆页面
+	var from = $param.getString("from");
+	if(!uid || "" == uid || "exit"==from){
+		var open = {
+			isKeep : "false",
+			viewid : "com.ump.productquery.Productquery_login",
+			frompage : "settingpage"
+		};
 	
-	var yearlist = json["yearlist"].yearlist;
-	var years=[];
-	if (yearlist != null && yearlist.length > 0){
-		for(var i=0;i<yearlist.length;i++){
-			var temp="";
-			if (currentyear == yearlist[i]){
-				temp={
-					value : yearlist[i] + "年",
-					content : yearlist[i] + "年",
-					selected : "true"
-				}
-			}else{
-				temp={
-					value : yearlist[i] + "年",
-					content : yearlist[i] + "年"
-				}
-			}
-			years.push(temp);
-		}
+		var openJsonString = $jsonToString(open);
+			
+		UM_NativeCall.callService("UMView.open", openJsonString);		
 	}
-	var months=[];
-	for (var i=1;i<=12;i++){
-		var temp="";
-		if (currentmonth == i){
-			temp={
-				value : i + "月",
-				content : i + "月",
-				selected : "true"
-			}
-		}else{
-			temp={
-				value : i + "月",
-				content : i + "月"
-			}
-		}
-		months.push(temp);
-	}
-	
-	var params = {
-		"okaction" : "pressok",
-		"title" : "会计期间",
-		"pickercount" : "2",
-		"datasource" : {
-			picker : [{
-				select : years
-			}, {
-				select : months
-			}]
-		},
-		"picker1binder" : "year",
-		"picker2binder" : "month",
-		"okbuttontitle" : "确定",
-		"cancelbuttontitle" : "取消"
-	};
-	
-	$service.call("UMView.openPicker", jsonToString(params), false);
-	//$view.openPicker(params);
-}
-function com$ump$productquery$mutproductviewController$pressok(ctx){
-	var year = $ctx.get("year");
-	var month = $ctx.get("month");
-	year = year.substring(0,year.length-1);
-	month = month.substring(0,month.length-1);
-	if (month.length == 1){
-		month = "0"+month;
-	}
-	var yearmonth = year + "-" + month;
-	var pk_factory = $ctx.get("pk_factory");
-	var factoryname = $ctx.get("factoryname");
-	var pk_accperiodmonth = $ctx.get("pk_accperiodmonth");
-	var orderby = $ctx.get("orderby");
-	var displaytype = $ctx.get("displaytype");
-	var orderbytype = $ctx.get("orderbytype");
-	var params = {
-		"startline" : "1",
-		"count" : "20",
-		"viewid" : "com.ump.productquery.MutproductqueryctxExtendController",
-		"action" : "getProductListByPk_factoryAndAccepriod",//方法名
-		"callback" : "setIcon",//请求回来后执行的ActionID
-		"pk_factory" : pk_factory,
-		"factoryname" : factoryname,
-		"pk_accperiodmonth" : pk_accperiodmonth,
-		"orderby" : orderby,
-		"displaytype" : displaytype,
-		"orderbytype" : orderbytype,
-		"yearmonth" : yearmonth
-	}
-	$service.call("UMList.getFirstPage", jsonToString(params), false);
 }
 com.ump.productquery.mutproductviewController.prototype = {
+    loadall : com$ump$productquery$mutproductviewController$loadall,
+    loadmyconcern : com$ump$productquery$mutproductviewController$loadmyconcern,
+    openmenu : com$ump$productquery$mutproductviewController$openmenu,
+    onload : com$ump$productquery$mutproductviewController$onload,
     initialize : com$ump$productquery$mutproductviewController$initialize,
-    UMonInit : com$ump$productquery$mutproductviewController$UMonInit,
-    UMonLoad : com$ump$productquery$mutproductviewController$UMonLoad,
-    UMonUnload : com$ump$productquery$mutproductviewController$UMonUnload,
-    UMonComplete : com$ump$productquery$mutproductviewController$UMonComplete,
-    UMonDataBinding : com$ump$productquery$mutproductviewController$UMonDataBinding,
-    setmonth : com$ump$productquery$mutproductviewController$setmonth,
-    loadview : com$ump$productquery$mutproductviewController$loadview,
-    seticonsrc : com$ump$productquery$mutproductviewController$seticonsrc,
-    setOrderByPrice : com$ump$productquery$mutproductviewController$setOrderByPrice,
-    setOrderBySeq : com$ump$productquery$mutproductviewController$setOrderBySeq,
-    setOrderByCode : com$ump$productquery$mutproductviewController$setOrderByCode,
+    evaljs : com$ump$productquery$mutproductviewController$evaljs,
+    setIcon : com$ump$productquery$mutproductviewController$setIcon,
     concern : com$ump$productquery$mutproductviewController$concern,
-    updatebyuserid : com$ump$productquery$mutproductviewController$updatebyuserid,
-    opensortdropdownlist : com$ump$productquery$mutproductviewController$opensortdropdownlist,
     orderbypriceup : com$ump$productquery$mutproductviewController$orderbypriceup,
     orderbypricedown : com$ump$productquery$mutproductviewController$orderbypricedown,
     orderbysequp : com$ump$productquery$mutproductviewController$orderbysequp,
@@ -511,8 +340,7 @@ com.ump.productquery.mutproductviewController.prototype = {
     orderbycodeup : com$ump$productquery$mutproductviewController$orderbycodeup,
     orderbycodedown : com$ump$productquery$mutproductviewController$orderbycodedown,
     openDetailCallBack : com$ump$productquery$mutproductviewController$openDetailCallBack,
-    openAccperiodPicker : com$ump$productquery$mutproductviewController$openAccperiodPicker,
-    pressok : com$ump$productquery$mutproductviewController$pressok
-    
+    updatebyuserid : com$ump$productquery$mutproductviewController$updatebyuserid
 };
-com.ump.productquery.mutproductviewController.registerClass('com.ump.productquery.mutproductviewController');
+com.ump.productquery.mutproductviewController.registerClass('com.ump.productquery.mutproductviewController',UMP.UI.Mvc.Controller);
+}catch(e){$e(e);}

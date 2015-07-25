@@ -3,6 +3,7 @@ halign:center;
 height:fill;
 layout:vbox;
 width:fill;
+valign:TOP;
 }
  #viewPage0 {
 halign:center;
@@ -10,12 +11,14 @@ height:fill;
 layout:vbox;
 background:#EFEFF4;
 width:fill;
+valign:TOP;
 }
  #panel1 {
 halign:center;
 height:160;
 layout:vbox;
 width:fill;
+valign:TOP;
 }
  #image3 {
 height:72;
@@ -23,7 +26,7 @@ width:72;
 margin-top:40;
 }
  #label5 {
-hAlign:center;
+halign:center;
 height:wrap;
 widthWrap:108.0;
 color:#333333;
@@ -32,24 +35,28 @@ font-size:17;
 width:wrap;
 font-family:default;
 margin-top:5;
+valign:center;
 }
  #label0 {
-hAlign:center;
+halign:center;
 height:1;
 color:#C7C7C7;
-font-size:14;
 background:#C7C7C7;
+font-size:14;
 width:fill;
 font-family:default;
+valign:center;
 }
  #panel2 {
 halign:center;
 height:92;
 layout:vbox;
-width:fill;
 background:#ffffff;
+width:fill;
+valign:TOP;
 }
  #panel3 {
+halign:LEFT;
 height:45;
 layout:hbox;
 width:fill;
@@ -73,15 +80,17 @@ margin-left:13;
 font-family:default;
 }
  #label3 {
-hAlign:center;
+halign:center;
 height:1;
 color:#000000;
-background:#C7C7C7;
 font-size:14;
+background:#C7C7C7;
 width:fill;
 font-family:default;
+valign:center;
 }
  #panel4 {
+halign:LEFT;
 height:45;
 layout:hbox;
 width:fill;
@@ -105,31 +114,18 @@ margin-left:13;
 font-family:default;
 }
  #label4 {
-hAlign:center;
+halign:center;
 height:1;
 color:#000000;
-font-size:14;
 background:#C7C7C7;
+font-size:14;
 width:fill;
 font-family:default;
-}
- #button2 {
-hAlign:center;
-pressed-image:nc_login_touch.9.png;
-width:fill;
-background-image-dis:nc_unlogin.9.png;
-margin-right:12;
-height:44;
-color:#ffffff;
-font-size:20;
-margin-left:12;
-font-family:default;
-margin-top:12;
-vAlign:center;
-background-image:nc_login.9.png;
+valign:center;
 }
  #panel0 {
 margin-right:12;
+halign:LEFT;
 height:32;
 layout:hbox;
 width:fill;
@@ -138,41 +134,51 @@ margin-top:12;
 valign:center;
 }
  #button0 {
-hAlign:left;
+halign:left;
 color:#fd2009;
 font-size:16;
 width:72;
 }
  #label2 {
-hAlign:center;
+halign:center;
 height:14.0;
 weight:1;
 color:#000000;
 font-size:12;
 width:0;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #label1 {
 margin-right:6;
-hAlign:right;
+halign:right;
 height:fill;
 color:#959597;
 font-size:16;
 width:90.0;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #switch0 {
-switch-trackon-image:slideswitch;
 height:fill;
-color:#e50011;
-font-size:18;
-background:#167ef8;
+background:#00CD00;
 width:51;
 background-image-dis:slideswitch;
+}
+ #button2 {
+halign:center;
+pressed-image:btn_zc_press.png;
+width:fill;
+background-image-dis:btn_zc_.png;
+margin-right:12;
+height:44;
+color:#ffffff;
+font-size:20;
+margin-left:12;
 font-family:default;
-switch-trackoff-image:switch_off1.png;
+margin-top:12;
+valign:center;
+background-image:btn_zc.png;
 }
  #panel5 {
 halign:center;
@@ -180,6 +186,7 @@ height:0;
 weight:1;
 layout:vbox;
 width:fill;
+valign:TOP;
 }
  #panel6 {
 halign:center;
@@ -187,6 +194,7 @@ height:20;
 layout:vbox;
 width:fill;
 margin-bottom:24;
+valign:TOP;
 }
  #image2 {
 height:17;

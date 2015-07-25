@@ -3,6 +3,7 @@ halign:center;
 height:fill;
 layout:vbox;
 width:fill;
+valign:TOP;
 }
  #viewPage0 {
 halign:center;
@@ -10,21 +11,23 @@ height:fill;
 layout:vbox;
 background:#F5F5F5;
 width:fill;
+valign:TOP;
 }
  #navigatorbar0 {
-padding-left:8;
 padding-right:8;
+padding-left:8;
+halign:LEFT;
 height:44.0;
 color:#000000;
-layout:hbox;
 font-size:17;
+layout:hbox;
 width:fill;
 font-family:default;
 valign:center;
 background-image:nav.png;
 }
  #button3 {
-hAlign:center;
+halign:center;
 height:44;
 color:#e50011;
 pressed-image:setting_touch.png;
@@ -32,21 +35,21 @@ font-size:17;
 width:44;
 font-family:default;
 font-pressed-color:#f2adb2;
-vAlign:center;
+valign:center;
 background-image:setting.png;
 }
  #label0 {
-hAlign:center;
+halign:center;
 height:44;
 weight:1;
 color:#000001;
 font-size:17;
 width:0;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #button1 {
-hAlign:center;
+halign:center;
 height:44;
 color:#e50011;
 pressed-image:search_touch.png;
@@ -54,7 +57,7 @@ font-size:17;
 width:44;
 font-family:default;
 font-pressed-color:#f2adb2;
-vAlign:center;
+valign:center;
 background-image:search.png;
 }
  #panel0 {
@@ -62,8 +65,10 @@ halign:center;
 height:fill;
 layout:vbox;
 width:fill;
+valign:TOP;
 }
  #panel1 {
+halign:LEFT;
 height:44;
 background:#ffffff;
 layout:hbox;
@@ -71,16 +76,17 @@ width:fill;
 valign:center;
 }
  #panel2 {
-padding-left:19;
 padding-right:15;
+padding-left:19;
+halign:LEFT;
 height:44;
-layout:hbox;
 background:#ffffff;
+layout:hbox;
 width:fill;
 valign:center;
 }
  #label3 {
-hAlign:center;
+halign:center;
 height:wrap;
 color:#000000;
 heightWrap:20.0;
@@ -88,41 +94,44 @@ font-size:14;
 width:30;
 font-family:default;
 display:none;
-vAlign:center;
+valign:center;
 }
  #label4 {
-hAlign:left;
+halign:left;
 height:fill;
 weight:1;
 color:#000000;
-background:#ffffff;
 font-size:16;
+background:#ffffff;
 width:0;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #image0 {
 height:12;
 width:8;
 }
  #label1 {
-hAlign:center;
+halign:center;
 height:1;
 color:#c7c7c7;
-background:#c7c7c7;
 font-size:14;
+background:#c7c7c7;
 width:fill;
 font-family:default;
+valign:center;
 }
  #panel3 {
+halign:LEFT;
 height:44;
-background:#ffffff;
 layout:hbox;
+background:#ffffff;
 width:fill;
 margin-top:1;
 valign:center;
 }
  #panel4 {
+halign:LEFT;
 height:44;
 layout:hbox;
 background:#ffffff;
@@ -130,7 +139,7 @@ width:fill;
 valign:center;
 }
  #label8 {
-hAlign:center;
+halign:center;
 height:wrap;
 color:#000000;
 heightWrap:20.0;
@@ -138,17 +147,18 @@ font-size:14;
 width:30;
 font-family:default;
 display:none;
-vAlign:center;
+valign:center;
 }
  #panel7 {
 halign:center;
 height:fill;
 layout:vbox;
-width:45;
 background:#ffffff;
+width:45;
+valign:TOP;
 }
  #button0 {
-hAlign:center;
+halign:center;
 height:25;
 color:#e50011;
 pressed-image:left_touch_nc.png;
@@ -157,11 +167,11 @@ width:25;
 font-family:default;
 margin-top:9.5;
 font-pressed-color:#f2adb2;
-vAlign:center;
+valign:center;
 background-image:left_nc.png;
 }
  #label5 {
-hAlign:center;
+halign:center;
 height:wrap;
 color:#000000;
 heightWrap:20.0;
@@ -169,10 +179,10 @@ font-size:14;
 width:12.0;
 font-family:default;
 display:none;
-vAlign:center;
+valign:center;
 }
  #label10 {
-hAlign:center;
+halign:center;
 height:wrap;
 color:#000000;
 heightWrap:20.0;
@@ -180,30 +190,29 @@ font-size:14;
 width:12.0;
 font-family:default;
 display:none;
-vAlign:center;
+valign:center;
 }
  #label9 {
-hAlign:center;
+halign:center;
 height:fill;
 weight:1;
 color:#000000;
-background:#ffffff;
 font-size:16;
+background:#ffffff;
 width:0;
 font-family:default;
 display:none;
 font-weight:bold;
-vAlign:center;
+valign:center;
 }
  #dateinput0 {
 padding-left:4;
-padding-top:10;
 halign:CENTER;
 height:44;
 weight:1;
 color:#000000;
-background:#ffffff;
 font-size:17;
+background:#ffffff;
 width:0;
 font-family:default;
 }
@@ -211,11 +220,12 @@ font-family:default;
 halign:center;
 height:fill;
 layout:vbox;
-width:45;
 background:#ffffff;
+width:45;
+valign:TOP;
 }
  #button2 {
-hAlign:center;
+halign:center;
 height:25;
 color:#e50011;
 pressed-image:right_touch_nc.png;
@@ -224,20 +234,22 @@ width:25;
 font-family:default;
 margin-top:9.5;
 font-pressed-color:#f2adb2;
-vAlign:center;
+valign:center;
 background-image:right_nc.png;
 }
  #label2 {
-hAlign:center;
+halign:center;
 height:1;
 color:#c7c7c7;
-background:#c7c7c7;
 font-size:14;
+background:#c7c7c7;
 width:fill;
 font-family:default;
+valign:center;
 }
  #panel5 {
 padding-left:75;
+halign:LEFT;
 height:44;
 layout:hbox;
 width:fill;
@@ -245,6 +257,7 @@ margin-top:1;
 valign:center;
 }
  #togglebuttongroup1 {
+halign:LEFT;
 height:44;
 weight:1;
 layout:hbox;
@@ -253,7 +266,7 @@ margin-left:8;
 valign:center;
 }
  #togglebutton3 {
-hAlign:center;
+halign:center;
 height:42.0;
 background-image-off:label_4_left.png;
 color:#e50011;
@@ -261,11 +274,11 @@ font-size:14;
 width:75.5;
 font-family:default;
 font-pressed-color:#ffffff;
-vAlign:center;
+valign:center;
 background-image-on:label_4_left_touch.png;
 }
  #togglebutton4 {
-hAlign:center;
+halign:center;
 height:42.0;
 background-image-off:label_4_right.png;
 color:#e50011;
@@ -273,11 +286,12 @@ font-size:14;
 width:75.5;
 font-family:default;
 font-pressed-color:#ffffff;
-vAlign:center;
+valign:center;
 background-image-on:label_4_right_touch.png;
 }
  #panel6 {
 margin-right:8;
+halign:LEFT;
 height:fill;
 layout:hbox;
 width:70;
@@ -287,7 +301,7 @@ margin-top:6;
 valign:center;
 }
  #imagebutton2 {
-hAlign:center;
+halign:center;
 text-align:left;
 width:64;
 icon-width:12;
@@ -299,17 +313,18 @@ font-size:14;
 icon-background-image:desc.png;
 icon-pressed-image:desc.png;
 font-family:default;
-vAlign:center;
+valign:center;
 icon-text-spacing:3;
 }
  #label6 {
-hAlign:center;
+halign:center;
 height:1;
 color:#c7c7c7;
-background:#c7c7c7;
 font-size:14;
+background:#c7c7c7;
 width:fill;
 font-family:default;
+valign:center;
 }
  #listview0 {
 height:0;

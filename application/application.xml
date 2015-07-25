@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<application id="38300306" appname="产品成本分析" versionCode="1.0.0" versionName="1.0.0" icon="app" autoCheckUpdate="false"><permission id="internet"/><components><component name="productquery" start="true"/></components></application>
+<application id="38300306" appname="产品成本分析" versionCode="1.0.0" versionName="1.0.0" icon="app" autoCheckUpdate="false" jsengine="v1.0"><permission id="internet"/><components><component name="productquery" start="true"/></components></application>

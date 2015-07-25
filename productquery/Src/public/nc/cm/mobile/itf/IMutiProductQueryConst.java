@@ -1,6 +1,8 @@
 package nc.cm.mobile.itf;
 
 public interface IMutiProductQueryConst {
+	public static final String APPID = "38300306";
+	
     public static final String ORDERBYTYPE_UP = "asc";
 
     public static final String ORDERBYTYPE_DOWN = "desc";
