@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<graph>
+  <model id="currtype" x="179" y="77" type="EmptyRectModel" hasTarget="false" hasSource="false">
+    <context id="currtype" from-type="context">
+      <field id="code" type="string"/>
+      <field id="name" type="string"/>
+    </context>
+  </model>
+</graph>

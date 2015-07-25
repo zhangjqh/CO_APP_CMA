@@ -1,0 +1,87 @@
+ #cm_productfilter {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+}
+ #viewPage0 {
+halign:center;
+height:fill;
+layout:vbox;
+background:#F5F5F5;
+width:fill;
+}
+ #navigatorbar0 {
+padding-left:8;
+padding-right:8;
+height:44.0;
+color:#000000;
+layout:hbox;
+font-size:17;
+width:fill;
+font-family:default;
+valign:center;
+background-image:navbar_login.png;
+}
+ #button0 {
+padding-left:20;
+hAlign:left;
+height:44;
+color:#e50011;
+pressed-image:btn_back_touch;
+font-size:17;
+width:88;
+font-family:default;
+font-pressed-color:#f2adb2;
+vAlign:center;
+background-image:btn_back;
+}
+ #label0 {
+hAlign:center;
+height:fill;
+weight:1;
+color:#000000;
+font-size:14;
+width:0;
+font-family:default;
+vAlign:center;
+}
+ #search0 {
+height:43;
+search-btn-icon:search_left1.png;
+color:#000000;
+font:default;
+font-size:14;
+width:fill;
+search-del-icon:search_right1.png;
+background-image:search_bg1.png;
+}
+ #listview0 {
+height:0;
+weight:1;
+background:#f6f6f6;
+width:fill;
+}
+ #panel0 {
+halign:center;
+weight:1;
+height:0;
+layout:vbox;
+width:fill;
+display:none;
+}
+ #image0 {
+height:96;
+width:96;
+margin-top:50;
+}
+ #label1 {
+hAlign:center;
+height:wrap;
+widthWrap:85.0;
+color:#c7c7c7;
+heightWrap:23.0;
+font-size:16;
+width:wrap;
+font-family:default;
+}

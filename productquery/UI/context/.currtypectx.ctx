@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<graph>
+  <model id="currtypectx" x="88" y="126" type="EmptyRectModel" hasTarget="false" hasSource="true">
+    <context id="currtypectx" from-type="context">
+      <fieldset id="currtypelist" from="currtypeinfo" type="string" relation="n" fullclassname="" from-type="context" ref-model="EmptyRectModel"/>
+    </context>
+  </model>
+  <model id="currtypeinfo" x="297" y="249" type="EmptyRectModel" hasTarget="true" hasSource="false">
+    <context id="currtypeinfo" from-type="context">
+      <field id="code" type="string"/>
+      <field id="name" type="string"/>
+    </context>
+  </model>
+</graph>

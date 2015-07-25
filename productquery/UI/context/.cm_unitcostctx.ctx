@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<graph>
+  <model id="productinfodetailctx" x="330" y="32" type="EmptyRectModel" hasTarget="true" hasSource="false">
+    <context id="productinfodetailctx" from-type="context">
+      <field id="factorname" type="string"/>
+      <field id="total" type="string"/>
+      <field id="price" type="string"/>
+      <field id="factortype" type="string"/>
+      <field id="factoricon" type="string"/>
+      <field id="detailcurrtype" type="string"/>
+    </context>
+  </model>
+  <model id="concernctx" x="272" y="211" type="EmptyRectModel" hasTarget="true" hasSource="false">
+    <context id="concernctx" from-type="context">
+      <field id="currentState" type="string"/>
+      <field id="iconsrc" type="string"/>
+    </context>
+  </model>
+  <model id="cm_unitcostctx" x="71" y="32" type="EmptyRectModel" hasTarget="false" hasSource="true">
+    <context id="cm_unitcostctx" from-type="context">
+      <field id="pk_factory" type="string"/>
+      <field id="factoryname" type="string"/>
+      <field id="pk_material" type="string"/>
+      <field id="productname" type="string"/>
+      <field id="pk_accperiodmonth" type="string"/>
+      <field id="yearmonth" type="string"/>
+      <field id="price" type="string"/>
+      <field id="quantity" type="string"/>
+      <field id="total" type="string"/>
+      <fieldset id="productinfodetails" from="productinfodetailctx" type="string" relation="n" fullclassname="" from-type="context"/>
+      <field id="currtype" type="string"/>
+      <field id="mesadoc" type="string"/>
+      <fieldset id="concern" from="concernctx" type="string" relation="1" fullclassname="" from-type="context"/>
+    </context>
+  </model>
+</graph>

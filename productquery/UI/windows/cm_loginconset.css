@@ -1,0 +1,153 @@
+ #cm_loginconset {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+}
+ #viewPage0 {
+halign:center;
+height:fill;
+layout:vbox;
+background:#EFEFF4;
+width:fill;
+}
+ #navigatorbar0 {
+padding-left:8;
+padding-right:8;
+pressed-image:nav;
+width:fill;
+background-image-dis:navbar_login;
+height:44.0;
+color:#000000;
+layout:hbox;
+font-size:17;
+font-family:default;
+valign:center;
+background-image:navbar_login;
+}
+ #label0 {
+hAlign:center;
+height:14.0;
+color:#000000;
+font-size:14;
+width:32.0;
+font-family:default;
+vAlign:center;
+}
+ #label2 {
+hAlign:center;
+height:fill;
+weight:1;
+color:#000000;
+font-size:17;
+width:0;
+font-family:default;
+vAlign:center;
+}
+ #label1 {
+hAlign:center;
+height:14.0;
+color:#000000;
+font-size:14;
+width:32.0;
+font-family:default;
+vAlign:center;
+}
+ #panel0 {
+margin-right:12;
+height:44;
+layout:hbox;
+width:fill;
+margin-left:12;
+margin-top:2;
+valign:center;
+}
+ #textbox0 {
+padding-left:2;
+halign:LEFT;
+height:44;
+weight:2;
+color:#333333;
+font-size:15;
+width:0;
+font-family:default;
+background-image:setting_ip;
+}
+ #label3 {
+hAlign:center;
+height:44;
+color:#000000;
+font-size:14;
+width:28;
+font-family:default;
+vAlign:center;
+}
+ #textbox1 {
+padding-left:2;
+halign:LEFT;
+height:44;
+weight:1;
+color:#333333;
+font-size:15;
+width:0;
+font-family:default;
+background-image:setting_port;
+}
+ #panel1 {
+margin-right:12;
+height:32;
+layout:hbox;
+width:fill;
+margin-left:12;
+margin-bottom:12;
+display:none;
+margin-top:12;
+valign:center;
+}
+ #label4 {
+hAlign:center;
+height:14.0;
+weight:1;
+color:#000000;
+font-size:14;
+width:0;
+font-family:default;
+vAlign:center;
+}
+ #label5 {
+margin-right:6;
+hAlign:center;
+height:fill;
+color:#333333;
+font-size:15;
+width:100;
+font-family:default;
+vAlign:center;
+}
+ #switch0 {
+padding-left:2;
+height:fill;
+switch-trackon-image:slideswitch;
+color:#e50011;
+font-size:18;
+background:#167ef8;
+width:51;
+background-image-dis:slideswitch;
+font-family:default;
+switch-trackoff-image:switch_off;
+}
+ #button0 {
+hAlign:center;
+pressed-image:nc_login_touch.9.png;
+width:fill;
+background-image-dis:nc_unlogin.9.png;
+margin-right:12;
+height:44;
+color:#ffffff;
+font-size:20;
+margin-left:12;
+font-family:default;
+margin-top:24;
+vAlign:center;
+background-image:nc_login.9.png;
+}

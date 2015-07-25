@@ -1,0 +1,174 @@
+ #cm_mutfactoryview {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+}
+ #viewPage0 {
+halign:center;
+height:fill;
+layout:vbox;
+background:#F5F5F5;
+width:fill;
+}
+ #navigatorbar0 {
+padding-left:8;
+padding-right:8;
+height:44.0;
+color:#000000;
+layout:hbox;
+font-size:17;
+width:fill;
+font-family:default;
+valign:center;
+background-image:nav.png;
+}
+ #label1 {
+hAlign:center;
+height:wrap;
+widthWrap:32.0;
+color:#000000;
+heightWrap:14.0;
+font-size:14;
+width:wrap;
+font-family:default;
+display:none;
+vAlign:center;
+}
+ #button0 {
+padding-left:20;
+hAlign:left;
+height:44;
+color:#e50011;
+pressed-image:btn_back_touch;
+font-size:17;
+width:88;
+font-family:default;
+font-pressed-color:#f2adb2;
+vAlign:center;
+background-image:btn_back;
+}
+ #label0 {
+hAlign:center;
+height:fill;
+weight:1;
+color:#000000;
+font-size:14;
+width:0;
+font-family:default;
+vAlign:center;
+}
+ #button2 {
+hAlign:center;
+height:44;
+color:#e50011;
+pressed-image:filter_touch.png;
+font-size:17;
+width:44;
+font-family:default;
+font-pressed-color:#f2adb2;
+vAlign:center;
+background-image:filter.png;
+}
+ #button1 {
+hAlign:right;
+height:44;
+color:#e50011;
+pressed-image:pie_btn_touch.png;
+font-size:17;
+width:44;
+font-family:default;
+display:none;
+font-pressed-color:#f2adb2;
+vAlign:center;
+background-image:pie_btn.png;
+}
+ #panel2 {
+padding-right:15;
+padding-left:15;
+padding-top:12;
+halign:center;
+height:70;
+layout:vbox;
+background:#f8f8f8;
+width:fill;
+padding-bottom:12;
+}
+ #panel0 {
+height:20.0;
+background:#f8f8f8;
+layout:hbox;
+width:fill;
+margin-bottom:8;
+valign:center;
+}
+ #label3 {
+hAlign:center;
+height:wrap;
+widthWrap:123.0;
+color:#000000;
+heightWrap:20.0;
+font-size:14;
+width:wrap;
+font-family:default;
+display:none;
+vAlign:center;
+}
+ #label4 {
+hAlign:left;
+height:fill;
+widthWrap:290.0;
+color:#000000;
+background:#f8f8f8;
+font-size:16;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #panel1 {
+height:17.0;
+layout:hbox;
+background:#f8f8f8;
+width:fill;
+valign:center;
+}
+ #label8 {
+hAlign:center;
+height:wrap;
+widthWrap:123.0;
+color:#000000;
+heightWrap:20.0;
+font-size:14;
+width:wrap;
+font-family:default;
+display:none;
+vAlign:center;
+}
+ #label9 {
+hAlign:left;
+height:fill;
+widthWrap:260.0;
+color:#000000;
+background:#f8f8f8;
+font-size:13;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #label2 {
+hAlign:center;
+height:1;
+color:#c7c7c7;
+background:#c7c7c7;
+font-size:14;
+width:fill;
+font-family:default;
+}
+ #listview0 {
+height:0;
+weight:1;
+background:#f6f6f6;
+width:fill;
+margin-top:1;
+pressed-color:#ff8000;
+}

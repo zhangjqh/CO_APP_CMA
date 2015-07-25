@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dsset>
+	<datasource id="nc63" isdefault="true">
+		<url>http://10.1.76.40:8087/</url>
+		<ncds>design</ncds>
+	</datasource>
+</dsset>

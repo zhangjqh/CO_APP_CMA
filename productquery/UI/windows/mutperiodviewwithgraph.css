@@ -1,0 +1,211 @@
+ #mutperiodviewwithgraph {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+}
+ #viewPage0 {
+halign:center;
+height:fill;
+layout:vbox;
+background:#F5F5F5;
+width:fill;
+}
+ #navigatorbar0 {
+padding-right:8;
+padding-left:8;
+height:44.0;
+color:#000000;
+font-size:17;
+layout:hbox;
+width:fill;
+font-family:default;
+valign:center;
+background-image:navbar_login.png;
+}
+ #button1 {
+hAlign:right;
+height:44;
+widthWrap:36.0;
+color:#e50011;
+font-size:17;
+width:wrap;
+font-family:default;
+display:none;
+font-pressed-color:#f2adb2;
+vAlign:center;
+}
+ #label1 {
+hAlign:center;
+height:wrap;
+widthWrap:34.0;
+color:#000000;
+heightWrap:20.0;
+font-size:14;
+width:wrap;
+font-family:default;
+display:none;
+vAlign:center;
+}
+ #button0 {
+padding-left:20;
+hAlign:left;
+height:44;
+color:#e50011;
+pressed-image:btn_back_touch;
+font-size:17;
+width:88;
+font-family:default;
+font-pressed-color:#f2adb2;
+vAlign:center;
+background-image:btn_back;
+}
+ #label0 {
+hAlign:center;
+height:fill;
+weight:1;
+color:#000001;
+font-size:17;
+width:0;
+font-family:default;
+vAlign:center;
+}
+ #button3 {
+margin-right:8;
+hAlign:center;
+height:44;
+color:#e50011;
+pressed-image:filter_touch.png;
+font-size:17;
+width:44;
+font-family:default;
+font-pressed-color:#f2adb2;
+vAlign:center;
+background-image:filter.png;
+}
+ #button2 {
+hAlign:center;
+height:44;
+color:#e50011;
+pressed-image:listdata_touch.png;
+font-size:17;
+width:44;
+font-family:default;
+font-pressed-color:#f2adb2;
+vAlign:center;
+background-image:listdata.png;
+}
+ #panel3 {
+padding-right:15;
+padding-left:15;
+padding-top:12;
+halign:center;
+height:70;
+background:#f8f8f8;
+layout:vbox;
+width:fill;
+padding-bottom:12;
+}
+ #panel0 {
+height:20;
+background:#f8f8f8;
+layout:hbox;
+width:fill;
+margin-bottom:8;
+valign:center;
+}
+ #label3 {
+hAlign:center;
+height:wrap;
+widthWrap:123.0;
+color:#000000;
+heightWrap:20.0;
+font-size:14;
+width:wrap;
+font-family:default;
+display:none;
+vAlign:center;
+}
+ #label4 {
+hAlign:center;
+height:fill;
+widthWrap:278.0;
+color:#000000;
+font-size:16;
+background:#f8f8f8;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #label5 {
+hAlign:center;
+height:wrap;
+color:#000000;
+heightWrap:20.0;
+font-size:14;
+width:12.0;
+font-family:default;
+display:none;
+vAlign:center;
+}
+ #panel1 {
+height:17;
+background:#f8f8f8;
+width:fill;
+layout:hbox;
+valign:center;
+}
+ #label8 {
+hAlign:center;
+height:wrap;
+widthWrap:123.0;
+color:#000000;
+heightWrap:20.0;
+font-size:14;
+width:wrap;
+font-family:default;
+display:none;
+vAlign:center;
+}
+ #label9 {
+hAlign:center;
+height:fill;
+widthWrap:263.0;
+color:#000000;
+font-size:13;
+background:#f8f8f8;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #label10 {
+hAlign:center;
+height:wrap;
+color:#000000;
+heightWrap:20.0;
+font-size:14;
+width:12.0;
+font-family:default;
+display:none;
+vAlign:center;
+}
+ #label2 {
+hAlign:center;
+height:1;
+color:#000000;
+font-size:14;
+background:#808080;
+width:fill;
+font-family:default;
+}
+ #panel2 {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+margin-top:5;
+}
+ #chartview0 {
+height:fill;
+width:fill;
+}

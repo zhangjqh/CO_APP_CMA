@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<graph>
+  <model id="org_factory" x="390" y="178" type="EmptyRectModel" hasTarget="true" hasSource="false">
+    <context id="org_factory" from-type="context">
+      <field id="pk_factory" type="string"/>
+      <field id="code" type="string"/>
+      <field id="name" type="string"/>
+    </context>
+  </model>
+  <model id="mutproductqueryctx" x="214" y="68" type="EmptyRectModel" hasTarget="false" hasSource="true">
+    <context id="mutproductqueryctx" from-type="context">
+      <fieldset id="org_factorylist" from="org_factory" type="string" relation="n" fullclassname="" from-type="context"/>
+      <fieldset id="productlist" from="productinfo" type="string" relation="n" fullclassname="" from-type="context" ref-model="EmptyRectModel"/>
+    </context>
+  </model>
+  <model id="productinfo" x="64" y="280" type="EmptyRectModel" hasTarget="true" hasSource="false">
+    <context id="productinfo" from-type="context">
+      <field id="code" type="string"/>
+      <field id="name" type="string"/>
+      <field id="price" type="string"/>
+      <field id="quantity" type="string"/>
+      <field id="total" type="string"/>
+    </context>
+  </model>
+</graph>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<graph>
+  <model id="productinfo" x="255" y="14" type="EmptyRectModel" hasTarget="true" hasSource="false">
+    <context id="productinfo" from-type="context">
+      <field id="code" type="string"/>
+      <field id="name" type="string"/>
+      <field id="price" type="string"/>
+      <field id="quantity" type="string"/>
+      <field id="total" type="string"/>
+      <field id="mesadoc" type="string"/>
+      <field id="currtype" type="string"/>
+      <field id="pk_material" type="string"/>
+      <field id="currentState" type="string"/>
+      <field id="iconsrc" type="string"/>
+    </context>
+  </model>
+  <model id="mutproductqueryctx" x="50" y="15" type="EmptyRectModel" hasTarget="false" hasSource="true">
+    <context id="mutproductqueryctx" from-type="context">
+      <fieldset id="productlist" from="productinfo" type="string" relation="n" fullclassname="" from-type="context"/>
+      <field id="pk_factory" type="string"/>
+      <field id="yearmonth" type="string"/>
+      <field id="factoryname" type="string"/>
+      <field id="factorycode" type="string"/>
+      <field id="pk_accperiodmonth" type="string"/>
+      <field id="orderby" type="string"/>
+      <field id="displaytype" type="string"/>
+      <field id="orderbytype" type="string"/>
+    </context>
+  </model>
+</graph>

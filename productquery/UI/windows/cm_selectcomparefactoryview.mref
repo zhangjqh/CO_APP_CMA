@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<window xmlns:web="http://www.yonyou.com/uapmobile/dsl" id="cm_selectcomparefactoryview" context="mutifactorygroupctx" controller="cm_selectcomparefactoryviewController" namespace="com.ump.productquery">
+    <import ref="cm_selectcomparefactoryview.css" type="css"/>
+    <import ref="cm_selectcomparefactoryviewRow.w" type="widget"/>
+    <import ref="cm_selectcomparefactorygroupRow.w" type="widget"/>
+    <action id="load" count="20" viewid="com.ump.productquery.Cm_mutiselectfactoryctxExtendController" startline="1" keyword="#{searchfield}" callback="scrolltofisrtselectedindex" action="factoryCompareSelect" isDataCollect="true" method="UMList.getFirstPage" refresultstr="#{plug.refresultstr}"/>
+    <action id="onCancel" resultcode="0" method="UMView.close"/>
+    <action id="onClickListRow" cursor="cursorfactorygrouplist_factorylistalias" selectpk_factory_arrayPath="factorygrouplist.factorylist" selectpk_factory="#{#{cursor.cursorfactorygrouplist_factorylistalias}.pk_factory}" checked_arrayPath="factorygrouplist.factorylist" method="onClickListRow" checked="#{#{cursor.cursorfactorygrouplist_factorylistalias}.checked}"/>
+    <action id="returnResult" method="returnResult"/>
+    <action id="loadNext" count="20" viewid="com.ump.productquery.Cm_mutiselectfactoryctxExtendController" keyword="#{searchfield}" action="factoryCompareSelect" callback="scrolltofisrtselectedindex" isDataCollect="true" method="UMList.getNextPage" refresultstr="#{plug.refresultstr}"/>
+    <action id="scrolltofisrtselectedindex" method="scrolltofisrtselectedindex"/>
+    <action id="loaddata" viewid="com.ump.productquery.Cm_mutiselectfactoryctxExtendController" lastusedfactorystr="#{lastusedfactorys}" keyword="#{searchfield}" action="factoryCompareSelect" callback="scrolltofisrtselectedindex" isDataCollect="true" method="UMService.callAction" autoDataBinding="true" refresultstr="#{plug.refresultstr}"/>
+    <action id="beforeloaddata" method="beforeloaddata"/>
+    <div id="viewPage0" onload="beforeloaddata">
+        <navigatorbar id="navigatorbar0" title="对比工厂选择">
+            <input id="button1" value="返回" onclick="onCancel" type="button"/>
+            <label id="label0"/>
+            <label id="label1" bindfield="lastusedfactorys">label</label>
+            <input id="button0" value="确定" onclick="returnResult" type="button"/> 
+        </navigatorbar>
+        <div id="viewTitle">
+            <search id="search0" bindField="searchfield" placeholder="搜索" localstorage="true" onsearch="loaddata"/> 
+        </div>
+        <listView id="listview0" bindfield="factorygrouplist,factorylist" childIndicator="cm_selectcomparefactoryviewRowWidget" cursorAction="cursorfactorygrouplist_factorylistalias" syncContext="listview0factorygrouplist_factorylist" groupIndicator="cm_selectcomparefactorygroupRow">
+            <widget id="listview0_groupWgt" ref="cm_selectcomparefactorygroupRow"/>
+            <widget id="listview0_childWgt0" ref="cm_selectcomparefactoryviewRowWidget"/> 
+        </listView> 
+    </div> 
+</window>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<window xmlns:web="http://www.yonyou.com/uapmobile/dsl" id="cm_selectcompareperiodview" context="cm_mutiselectperiodctx" controller="cm_selectcompareperiodviewController" namespace="com.ump.productquery">
+    <import ref="cm_selectcompareperiodview.css" type="css"/>
+    <import ref="cm_selectcompareperiodviewRow.w" type="widget"/>
+    <import ref="cm_selectcompareyeargroupRow.w" type="widget"/>
+    <action id="load" viewid="com.ump.productquery.Cm_mutiselectperiodctxExtendController" pk_factory="#{plug.pk_factory}" action="PeriodCompareSelect" callback="scrolltofisrtselectedindex" method="UMService.callAction" autoDataBinding="true" refresultstr="#{plug.refresultstr}"/>
+    <action id="onCancel" resultcode="0" method="UMView.close"/>
+    <action id="returnResult" method="returnResult"/>
+    <action id="onClickYearRow" yearindex_arrayPath="yearlist" cursor="cursoryearlistalias" yearindex="#{cursor.cursoryearlistalias.index}" method="onClickYearRow"/>
+    <action id="onClickYearMonthRow" yearmonth="#{#{cursor.cursoryearlist_yearmonthlistalias}.yearmonth}" pk_accperiodmonth_arrayPath="yearlist.yearmonthlist" cursor="cursoryearlist_yearmonthlistalias" pk_accperiodmonth="#{#{cursor.cursoryearlist_yearmonthlistalias}.pk_accperiodmonth}" yearmonth_arrayPath="yearlist.yearmonthlist" checked_arrayPath="yearlist.yearmonthlist" method="onClickYearMonthRow" checked="#{#{cursor.cursoryearlist_yearmonthlistalias}.checked}"/>
+    <action id="scrolltofisrtselectedindex" method="scrolltofisrtselectedindex"/>
+    <div id="viewPage0" onload="load">
+        <navigatorbar id="navigatorbar0" title="对比期间选择">
+            <input id="button1" value="返回" onclick="onCancel" type="button"/>
+            <label id="label0"/>
+            <input id="button0" value="确定" onclick="returnResult" type="button"/> 
+        </navigatorbar>
+        <listView id="listview0" bindfield="yearlist,yearmonthlist" childIndicator="cm_selectcompareperiodviewRowWidget" cursorAction="cursoryearlist_yearmonthlistalias" syncContext="listview0yearlist_yearmonthlist" groupIndicator="cm_selectcompareyeargroupRow">
+            <widget id="listview0_groupWgt" ref="cm_selectcompareyeargroupRow"/>
+            <widget id="listview0_childWgt0" ref="cm_selectcompareperiodviewRowWidget"/> 
+        </listView> 
+    </div> 
+</window>

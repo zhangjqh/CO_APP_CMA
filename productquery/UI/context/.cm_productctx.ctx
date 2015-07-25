@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<graph>
+  <model id="cmproductlistctx" x="289" y="103" type="EmptyRectModel" hasTarget="true" hasSource="false">
+    <context id="cmproductlistctx" from-type="context">
+      <field id="pk_material" type="string"/>
+      <field id="code" type="string"/>
+      <field id="name" type="string"/>
+    </context>
+  </model>
+  <model id="cm_productctx" x="72" y="75" type="EmptyRectModel" hasTarget="false" hasSource="true">
+    <context id="cm_productctx" from-type="context">
+      <fieldset id="cmproductlist" from="cmproductlistctx" type="string" relation="1" fullclassname="" from-type="context"/>
+      <field id="searchfield" type="string"/>
+    </context>
+  </model>
+</graph>

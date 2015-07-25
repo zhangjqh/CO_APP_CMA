@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<contexts namespace="com.ump.productquery" package="com.ump.productquery"> 
+  <context id="factorygroupctx" from-type="context" filter="" iscascade="false"> 
+    <fieldset id="grouplist" from="factoryctx" type="string" relation="n" parent-field="" child-field="" fullclassname="" from-type="context" iscascade="false"> 
+      <fieldset id="org_factorylist" from="org_factory" type="fieldset" relation="n" parent-field="" child-field="" fullclassname="" from-type="context" iscascade="false"> 
+        <field id="pk_factory" type="string"/>  
+        <field id="factorycode" type="string"/>  
+        <field id="factoryname" type="string"/>  
+        <field id="checked" type="string"/> 
+      </fieldset>  
+      <field id="factorygroupname" type="string"/> 
+    </fieldset>  
+    <field id="searchfield" type="string"/>  
+    <field id="lastusedfactorystr" type="string"/> 
+  </context> 
+</contexts>

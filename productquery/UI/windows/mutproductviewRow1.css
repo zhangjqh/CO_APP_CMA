@@ -1,0 +1,175 @@
+ #region1 {
+height:fill;
+layout:relative;
+width:fill;
+}
+ #mutproductviewRow {
+height:70;
+layout:hbox;
+background:#ffffff;
+width:320.0;
+left:0.0;
+valign:center;
+top:0.0;
+pressed-color:#ff8000;
+}
+ #panel0 {
+height:70;
+layout:hbox;
+width:fill;
+valign:center;
+padding-bottom:1;
+background-image:themes/ios7/designer/list_row_down3.png;
+}
+ #panel1 {
+height:fill;
+background:#ffffff;
+layout:hbox;
+width:70;
+valign:center;
+}
+ #panel4 {
+halign:center;
+height:fill;
+layout:vbox;
+width:70;
+padding-bottom:1;
+}
+ #image1 {
+height:fill;
+width:44;
+}
+ #panel22 {
+padding-right:15;
+height:fill;
+weight:1;
+layout:hbox;
+width:0;
+valign:center;
+}
+ #panel2 {
+height:fill;
+weight:1;
+background:#ffffff;
+layout:relative;
+width:0;
+valign:center;
+}
+ #label0 {
+hAlign:left;
+height:wrap;
+widthWrap:32.0;
+color:#000000;
+heightWrap:19.0;
+font-size:13;
+width:wrap;
+font-family:default;
+left:0.0;
+vAlign:center;
+top:12.0;
+}
+ #panel6 {
+height:20;
+layout:hbox;
+width:fill;
+background:#ffffff;
+left:0.0;
+valign:center;
+top:37.0;
+}
+ #panel3 {
+height:20;
+widthWrap:100.0;
+layout:hbox;
+width:wrap;
+valign:bottom;
+}
+ #label2 {
+hAlign:left;
+height:wrap;
+color:#6f6f6f;
+heightWrap:19.0;
+font-size:13;
+width:35;
+font-family:default;
+vAlign:center;
+}
+ #label1 {
+hAlign:center;
+height:wrap;
+widthWrap:32.0;
+color:#6f6f6f;
+heightWrap:19.0;
+font-size:13;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #label6 {
+hAlign:left;
+height:wrap;
+widthWrap:14.0;
+color:#6f6f6f;
+heightWrap:19.0;
+font-size:13;
+width:wrap;
+margin-left:2;
+font-family:default;
+vAlign:center;
+}
+ #label5 {
+hAlign:center;
+height:20;
+weight:1;
+color:#000000;
+font-size:14;
+width:0;
+font-family:default;
+}
+ #panel5 {
+margin-right:8;
+height:20;
+widthWrap:110.0;
+layout:hbox;
+width:wrap;
+margin-left:1;
+valign:bottom;
+}
+ #label3 {
+hAlign:left;
+height:wrap;
+widthWrap:60.0;
+color:#000000;
+heightWrap:19.0;
+font-size:13;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #label4 {
+hAlign:right;
+height:wrap;
+widthWrap:13.0;
+color:#0852a5;
+heightWrap:23.0;
+font-size:16;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #label7 {
+hAlign:right;
+height:wrap;
+widthWrap:36.0;
+color:#0852a5;
+heightWrap:23.0;
+font-size:16;
+width:wrap;
+margin-left:2;
+font-family:default;
+vAlign:center;
+}
+ #image0 {
+height:12;
+width:8;
+}

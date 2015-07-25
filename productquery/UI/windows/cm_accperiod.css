@@ -1,0 +1,64 @@
+ #cm_accperiod {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+}
+ #viewPage0 {
+halign:center;
+height:fill;
+layout:vbox;
+background:#FFFFFF;
+width:fill;
+}
+ #navigatorbar0 {
+padding-left:5;
+padding-right:5;
+height:44.0;
+font-size:17;
+background:#FFFFFF;
+layout:hbox;
+width:fill;
+font-family:default;
+valign:center;
+background-image:themes/normal/designer/nav.png;
+}
+ #button1 {
+hAlign:center;
+height:44;
+color:#e50011;
+pressed-image:btn_back_touch;
+font-size:17;
+width:88;
+background-image-dis:button;
+font-family:default;
+vAlign:center;
+background-image:btn_back;
+}
+ #label0 {
+hAlign:center;
+height:20.0;
+weight:1;
+color:#000000;
+font-size:14;
+width:0;
+font-family:default;
+vAlign:center;
+}
+ #button0 {
+hAlign:center;
+height:fill;
+color:#e50011;
+font-size:17;
+width:60;
+font-family:default;
+vAlign:center;
+background-image:themes/normal/designer/button.png;
+}
+ #listview0 {
+height:fill;
+width:fill;
+listview-divider-color:#ff8000;
+background-image:themes/normal/designer/listview.png;
+pressed-color:#ff8000;
+}

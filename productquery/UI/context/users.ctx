@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<contexts namespace="com.ump.productquery"> 
+  <context id="USERS" from-type="context" filter="" iscascade="false"> 
+    <field id="userName" type="string"/>
+    <field id="passWord" type="string"/>
+    <field id="ishttps" type="string"/>
+    <field id="autologin" type="string"/>
+    <field id="ip" type="string"/>
+    <field id="port" type="string"/>
+  </context> 
+</contexts>

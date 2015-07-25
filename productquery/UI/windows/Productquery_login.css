@@ -1,0 +1,194 @@
+ #Productquery_login {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+}
+ #viewPage0 {
+halign:center;
+height:fill;
+layout:vbox;
+background:#EFEFF4;
+width:fill;
+}
+ #panel1 {
+halign:center;
+height:160;
+layout:vbox;
+width:fill;
+}
+ #image3 {
+height:72;
+width:72;
+margin-top:40;
+}
+ #label5 {
+hAlign:center;
+height:wrap;
+widthWrap:108.0;
+color:#333333;
+heightWrap:25.0;
+font-size:17;
+width:wrap;
+font-family:default;
+margin-top:5;
+}
+ #label0 {
+hAlign:center;
+height:1;
+color:#C7C7C7;
+font-size:14;
+background:#C7C7C7;
+width:fill;
+font-family:default;
+}
+ #panel2 {
+halign:center;
+height:92;
+layout:vbox;
+width:fill;
+background:#ffffff;
+}
+ #panel3 {
+height:45;
+layout:hbox;
+width:fill;
+valign:center;
+}
+ #image0 {
+height:16;
+width:16;
+margin-left:26;
+}
+ #textbox0 {
+margin-right:12;
+halign:LEFT;
+height:fill;
+weight:1;
+color:#333333;
+pressed-image:textbox;
+font-size:15;
+width:0;
+margin-left:13;
+font-family:default;
+}
+ #label3 {
+hAlign:center;
+height:1;
+color:#000000;
+background:#C7C7C7;
+font-size:14;
+width:fill;
+font-family:default;
+}
+ #panel4 {
+height:45;
+layout:hbox;
+width:fill;
+valign:center;
+}
+ #image1 {
+height:16;
+width:16;
+margin-left:26;
+}
+ #textbox1 {
+margin-right:12;
+halign:LEFT;
+height:fill;
+weight:1;
+color:#333333;
+pressed-image:textbox;
+font-size:15;
+width:0;
+margin-left:13;
+font-family:default;
+}
+ #label4 {
+hAlign:center;
+height:1;
+color:#000000;
+font-size:14;
+background:#C7C7C7;
+width:fill;
+font-family:default;
+}
+ #button2 {
+hAlign:center;
+pressed-image:nc_login_touch.9.png;
+width:fill;
+background-image-dis:nc_unlogin.9.png;
+margin-right:12;
+height:44;
+color:#ffffff;
+font-size:20;
+margin-left:12;
+font-family:default;
+margin-top:12;
+vAlign:center;
+background-image:nc_login.9.png;
+}
+ #panel0 {
+margin-right:12;
+height:32;
+layout:hbox;
+width:fill;
+margin-left:12;
+margin-top:12;
+valign:center;
+}
+ #button0 {
+hAlign:left;
+color:#fd2009;
+font-size:16;
+width:72;
+}
+ #label2 {
+hAlign:center;
+height:14.0;
+weight:1;
+color:#000000;
+font-size:12;
+width:0;
+font-family:default;
+vAlign:center;
+}
+ #label1 {
+margin-right:6;
+hAlign:right;
+height:fill;
+color:#959597;
+font-size:16;
+width:90.0;
+font-family:default;
+vAlign:center;
+}
+ #switch0 {
+switch-trackon-image:slideswitch;
+height:fill;
+color:#e50011;
+font-size:18;
+background:#167ef8;
+width:51;
+background-image-dis:slideswitch;
+font-family:default;
+switch-trackoff-image:switch_off1.png;
+}
+ #panel5 {
+halign:center;
+height:0;
+weight:1;
+layout:vbox;
+width:fill;
+}
+ #panel6 {
+halign:center;
+height:20;
+layout:vbox;
+width:fill;
+margin-bottom:24;
+}
+ #image2 {
+height:17;
+width:45;
+}

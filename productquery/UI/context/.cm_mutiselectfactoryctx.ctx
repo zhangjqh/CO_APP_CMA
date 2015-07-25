@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<graph>
+  <model id="factory" x="549" y="111" type="EmptyRectModel" hasTarget="true" hasSource="false">
+    <context id="factory" from-type="context">
+      <field id="pk_factory" type="string"/>
+      <field id="factorycode" type="string"/>
+      <field id="factoryname" type="string"/>
+      <field id="checked" type="string"/>
+    </context>
+  </model>
+  <model id="cm_mutiselectfactoryctx" x="291" y="114" type="EmptyRectModel" hasTarget="true" hasSource="true">
+    <context id="cm_mutiselectfactoryctx" from-type="context">
+      <fieldset id="factorylist" from="factory" type="string" relation="n" fullclassname="" from-type="context"/>
+      <field id="factorygroupname" type="string"/>
+    </context>
+  </model>
+  <model id="mutifactorygroupctx" x="24" y="114" type="EmptyRectModel" hasTarget="false" hasSource="true">
+    <context id="mutifactorygroupctx" from-type="context">
+      <fieldset id="factorygrouplist" from="cm_mutiselectfactoryctx" type="string" relation="n" fullclassname="" from-type="context" ref-model="EmptyRectModel"/>
+      <field id="searchfield" type="string"/>
+      <field id="lastusedfactorys" type="string"/>
+    </context>
+  </model>
+</graph>

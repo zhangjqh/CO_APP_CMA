@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<window xmlns:web="http://www.yonyou.com/uapmobile/dsl" id="accperiodref" context="cm_accountperiodctx" controller="accperiodrefController" namespace="com.ump.productquery">
+    <import ref="accperiodref.css" type="css"/>
+    <import ref="cm_accperiodGroupRow.w" type="widget"/>
+    <import ref="cm_accperiodRow.w" type="widget"/>
+    <action id="load" viewid="com.ump.productquery.Cm_accountperiodctxExtendController" pk_factory="#{plug.pk_factory}" action="getAccperiodListByPK_factory" callback="setcurrentselectitemred" method="UMService.callAction" autoDataBinding="true"/>
+    <action id="onCancel" resultcode="0" method="UMView.close"/>
+    <action arrayPath="bd_accperiodlist" id="onClickListRow" result_arrayPath="yearlist.bd_accperiodlist" result="#{#{cursor.cursoryearlist_bd_accperiodlistalias}}" cursor="cursoryearlist_bd_accperiodlistalias" resultCode="15" method="UMView.close"/>
+    <action id="returnResult" method="returnResult"/>
+    <action id="setcurrentselectitemred" current_yearmonth="#{plug.current_yearmonth}" method="setcurrentselectitemred"/>
+    <div id="viewPage0" onload="load">
+        <navigatorbar id="navigatorbar0" title="会计期间">
+            <input id="button1" value="返回" onclick="onCancel" type="button"/>
+            <label id="label0"/> 
+        </navigatorbar>
+        <listView id="listview0" bindfield="yearlist,bd_accperiodlist" childIndicator="cm_accperiodRowWidget" cursorAction="cursoryearlist_bd_accperiodlistalias" syncContext="listview0yearlist_bd_accperiodlist" groupIndicator="cm_accperiodGroupRow">
+            <widget id="listview0_groupWgt" ref="cm_accperiodGroupRow"/>
+            <widget id="listview0_childWgt0" ref="cm_accperiodRowWidget"/> 
+        </listView> 
+    </div> 
+</window>

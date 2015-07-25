@@ -1,0 +1,134 @@
+ #cm_settingpage {
+halign:center;
+height:fill;
+width:fill;
+layout:vbox;
+}
+ #viewPage0 {
+halign:center;
+height:fill;
+width:fill;
+background:#F5F5F5;
+layout:vbox;
+}
+ #navigatorbar0 {
+padding-right:8;
+padding-left:8;
+height:44.0;
+color:#000000;
+font-size:17;
+layout:hbox;
+width:fill;
+font-family:default;
+valign:center;
+background-image:navbar_login.png;
+}
+ #button1 {
+padding-left:20;
+hAlign:left;
+pressed-image:btn_back_touch;
+width:88;
+background-image-dis:button;
+font-pressed-color:#f2adb2;
+height:44;
+color:#e50011;
+font-size:17;
+font-family:default;
+vAlign:center;
+background-image:btn_back;
+}
+ #label0 {
+hAlign:center;
+height:fill;
+widthWrap:216.0;
+color:#000000;
+font-size:14;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #panel1 {
+halign:center;
+height:32;
+width:fill;
+layout:vbox;
+}
+ #panel2 {
+padding-right:15;
+padding-left:15;
+height:44;
+background:#ffffff;
+layout:hbox;
+width:fill;
+valign:center;
+}
+ #label1 {
+hAlign:left;
+height:fill;
+weight:1;
+color:#000000;
+font-size:17;
+width:0;
+font-family:default;
+vAlign:center;
+}
+ #image1 {
+height:12;
+width:8;
+}
+ #panel3 {
+halign:center;
+height:32;
+width:fill;
+layout:vbox;
+}
+ #panel4 {
+padding-left:15;
+padding-right:15;
+height:44;
+background:#ffffff;
+layout:hbox;
+width:fill;
+valign:center;
+}
+ #label2 {
+hAlign:left;
+height:fill;
+weight:1;
+color:#000000;
+font-size:17;
+width:0;
+font-family:default;
+vAlign:center;
+}
+ #image2 {
+height:12;
+width:8;
+}
+ #panel5 {
+halign:center;
+height:32;
+width:fill;
+layout:vbox;
+}
+ #button0 {
+hAlign:center;
+pressed-image:nc_login_touch.9.png;
+width:fill;
+background-image-dis:nc_unlogin.9.png;
+margin-right:12;
+height:44;
+color:#ffffff;
+font-size:20;
+margin-left:12;
+font-family:default;
+vAlign:center;
+background-image:nc_login.9.png;
+}
+ #panel0 {
+halign:center;
+height:0;
+weight:1;
+layout:vbox;
+width:fill;
+}

@@ -1,0 +1,78 @@
+ #YearmonthWheelView {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+}
+ #viewPage0 {
+halign:center;
+height:fill;
+layout:vbox;
+background:#F5F5F5;
+width:fill;
+}
+ #panel0 {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+}
+ #navigatorbar0 {
+}
+ #button0 {
+padding-left:20;
+hAlign:left;
+height:44;
+pressed-image:btn_back_touch;
+width:88;
+background-image:btn_back;
+}
+ #label0 {
+hAlign:center;
+height:fill;
+weight:1;
+color:#000000;
+font-size:14;
+width:0;
+font-family:default;
+}
+ #button1 {
+hAlign:right;
+height:44;
+widthWrap:42.0;
+width:wrap;
+}
+ #picker0 {
+height:186;
+width:fill;
+}
+ #datetimeinput0 {
+padding-left:4;
+halign:LEFT;
+height:44;
+color:#167ef8;
+font-size:17;
+background:#ffffff;
+width:200;
+font-family:default;
+}
+ #timeinput0 {
+padding-left:4;
+halign:LEFT;
+height:44;
+color:#167ef8;
+font-size:17;
+background:#ffffff;
+width:200;
+font-family:default;
+}
+ #dateinput0 {
+padding-left:4;
+halign:LEFT;
+height:44;
+color:#167ef8;
+font-size:17;
+background:#ffffff;
+width:200;
+font-family:default;
+}

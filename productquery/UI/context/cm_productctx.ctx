@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<contexts namespace="com.ump.productquery" package="com.ump.productquery"> 
+  <context id="cm_productctx" from-type="context" filter="" iscascade="false"> 
+    <fieldset id="cmproductlist" from="cmproductlistctx" type="string" relation="1" parent-field="" child-field="" fullclassname="" from-type="context" iscascade="false"> 
+      <field id="pk_material" type="string"/>  
+      <field id="code" type="string"/>  
+      <field id="name" type="string"/> 
+    </fieldset>  
+    <field id="searchfield" type="string"/> 
+  </context> 
+</contexts>

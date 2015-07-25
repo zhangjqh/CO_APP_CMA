@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<contexts namespace="com.ump.productquery"> 
+  <context id="connectinfor" from-type="mbe" filter="" iscascade="false"> 
+    <field id="ip" type="string"/>  
+    <field id="port" type="string"/> 
+	<field id="ishttps" type="string"/>
+  </context> 
+</contexts>

@@ -1,0 +1,552 @@
+ #detailgraph {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+}
+ #viewPage0 {
+halign:center;
+height:fill;
+layout:vbox;
+background:#F5F5F5;
+width:fill;
+}
+ #navigatorbar0 {
+padding-right:8;
+padding-left:8;
+height:44.0;
+color:#000000;
+font-size:17;
+layout:hbox;
+width:fill;
+font-family:default;
+valign:center;
+background-image:nav.png;
+}
+ #button0 {
+padding-left:20;
+hAlign:left;
+height:44;
+color:#e50011;
+pressed-image:btn_back_touch;
+font-size:17;
+width:88;
+font-family:default;
+font-pressed-color:#f2adb2;
+vAlign:center;
+background-image:btn_back;
+}
+ #label0 {
+hAlign:center;
+height:fill;
+weight:1;
+color:#000000;
+font-size:14;
+width:0;
+font-family:default;
+vAlign:center;
+}
+ #button3 {
+hAlign:right;
+height:44;
+color:#e50011;
+pressed-image:listdata_touch.png;
+font-size:17;
+width:44;
+font-family:default;
+font-pressed-color:#f2adb2;
+vAlign:center;
+background-image:listdata.png;
+}
+ #panel11 {
+height:70;
+layout:hbox;
+width:fill;
+background:#ffffff;
+valign:center;
+}
+ #panel5 {
+halign:center;
+height:fill;
+layout:vbox;
+width:70;
+background:#f8f8f8;
+}
+ #label19 {
+hAlign:center;
+height:wrap;
+widthWrap:34.0;
+color:#000000;
+heightWrap:20.0;
+font-size:14;
+width:wrap;
+font-family:default;
+display:none;
+vAlign:center;
+}
+ #image0 {
+height:70;
+width:44;
+}
+ #panel0 {
+height:60.0;
+layout:hbox;
+width:fill;
+display:none;
+valign:center;
+}
+ #label1 {
+hAlign:center;
+height:wrap;
+widthWrap:34.0;
+color:#000000;
+heightWrap:20.0;
+font-size:14;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #label2 {
+hAlign:center;
+height:wrap;
+widthWrap:34.0;
+color:#000000;
+heightWrap:20.0;
+font-size:14;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #label3 {
+hAlign:center;
+height:wrap;
+widthWrap:34.0;
+color:#000000;
+heightWrap:20.0;
+font-size:14;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #panel1 {
+padding-right:15;
+halign:center;
+height:70;
+weight:1;
+background:#f8f8f8;
+layout:vbox;
+width:0;
+}
+ #panel3 {
+height:35;
+background:#f8f8f8;
+layout:hbox;
+width:fill;
+valign:top;
+}
+ #panel12 {
+margin-right:8;
+height:35;
+widthWrap:120.0;
+background:#f8f8f8;
+layout:hbox;
+width:wrap;
+valign:top;
+}
+ #label7 {
+hAlign:center;
+height:wrap;
+widthWrap:34.0;
+color:#000000;
+heightWrap:20.0;
+font-size:14;
+width:wrap;
+font-family:default;
+display:none;
+vAlign:center;
+}
+ #label4 {
+hAlign:left;
+height:20;
+widthWrap:50.0;
+color:#000000;
+font-size:16;
+width:wrap;
+font-family:default;
+margin-top:11;
+vAlign:center;
+}
+ #panel13 {
+halign:center;
+height:35;
+layout:vbox;
+width:50;
+background:#f8f8f8;
+}
+ #button4 {
+hAlign:center;
+pressed-image:compare_btn_touch.png;
+width:35;
+font-pressed-color:#ffffff;
+margin-right:8;
+height:18;
+color:#ffffff;
+font-size:14;
+font-family:default;
+margin-top:11;
+vAlign:center;
+background-image:compare_btn.png;
+}
+ #panel4 {
+height:35;
+layout:hbox;
+width:fill;
+background:#f8f8f8;
+valign:top;
+}
+ #panel15 {
+padding-right:8;
+height:35;
+weight:1;
+background:#f8f8f8;
+layout:hbox;
+width:0;
+valign:top;
+}
+ #label8 {
+hAlign:center;
+height:wrap;
+widthWrap:34.0;
+color:#000000;
+heightWrap:20.0;
+font-size:14;
+width:wrap;
+font-family:default;
+display:none;
+vAlign:center;
+}
+ #label5 {
+hAlign:left;
+height:20;
+widthWrap:80.0;
+color:#000000;
+font-size:13;
+width:wrap;
+font-family:default;
+margin-top:5;
+vAlign:center;
+}
+ #panel14 {
+height:35;
+layout:hbox;
+width:104;
+background:#f8f8f8;
+valign:top;
+}
+ #label23 {
+hAlign:center;
+height:20;
+weight:1;
+color:#000000;
+font-size:14;
+width:0;
+font-family:default;
+}
+ #label6 {
+margin-right:8;
+hAlign:right;
+height:20;
+color:#000000;
+font-size:13;
+width:53;
+font-family:default;
+margin-top:5;
+vAlign:center;
+}
+ #label9 {
+hAlign:center;
+height:wrap;
+widthWrap:34.0;
+color:#000000;
+heightWrap:20.0;
+font-size:14;
+width:wrap;
+font-family:default;
+display:none;
+vAlign:center;
+}
+ #panel17 {
+height:35;
+layout:hbox;
+width:50;
+valign:top;
+}
+ #button5 {
+hAlign:center;
+height:18;
+color:#ffffff;
+pressed-image:compare_btn_touch.png;
+font-size:14;
+width:35;
+font-family:default;
+margin-top:5;
+font-pressed-color:#ffffff;
+vAlign:center;
+background-image:compare_btn.png;
+}
+ #label21 {
+hAlign:center;
+height:1;
+color:#c7c7c7;
+font-size:14;
+background:#c7c7c7;
+width:fill;
+font-family:default;
+}
+ #panel2 {
+padding-right:15;
+padding-left:15;
+padding-top:5;
+height:100;
+background:#f8f8f8;
+layout:hbox;
+width:fill;
+valign:center;
+padding-bottom:5;
+}
+ #panel8 {
+padding-right:5;
+padding-left:5;
+halign:left;
+height:fill;
+background:#f8f8f8;
+layout:vbox;
+width:84;
+}
+ #panel19 {
+height:29;
+layout:hbox;
+width:fill;
+valign:center;
+}
+ #label16 {
+hAlign:left;
+height:fill;
+widthWrap:57.0;
+color:#000000;
+font-size:16;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #label28 {
+hAlign:center;
+height:1;
+color:#000000;
+font-size:14;
+background:#d3d3d3;
+width:fill;
+font-family:default;
+}
+ #panel20 {
+height:29;
+layout:hbox;
+width:fill;
+valign:center;
+}
+ #label13 {
+hAlign:left;
+height:fill;
+color:#000000;
+font-size:16;
+width:40;
+font-family:default;
+vAlign:center;
+}
+ #label29 {
+hAlign:center;
+height:1;
+color:#000000;
+font-size:14;
+background:#d3d3d3;
+width:fill;
+font-family:default;
+}
+ #panel21 {
+height:30;
+layout:hbox;
+width:fill;
+valign:center;
+}
+ #label10 {
+hAlign:left;
+height:fill;
+widthWrap:74.0;
+color:#000000;
+font-size:16;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #panel10 {
+halign:center;
+height:fill;
+background:#d3d3d3;
+layout:vbox;
+width:1;
+margin-top:6;
+}
+ #panel9 {
+padding-left:5;
+halign:center;
+height:fill;
+layout:vbox;
+background:#f8f8f8;
+width:fill;
+}
+ #panel6 {
+height:29;
+layout:hbox;
+width:fill;
+valign:center;
+}
+ #label25 {
+hAlign:center;
+height:20;
+weight:1;
+color:#000000;
+font-size:14;
+width:0;
+font-family:default;
+}
+ #label17 {
+hAlign:center;
+height:fill;
+widthWrap:20.0;
+color:#0852a5;
+font-size:16;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #label18 {
+hAlign:left;
+height:fill;
+widthWrap:50.0;
+color:#0852a5;
+font-size:16;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #label20 {
+hAlign:center;
+height:1;
+color:#000000;
+font-size:14;
+background:#d3d3d3;
+width:fill;
+font-family:default;
+}
+ #panel7 {
+height:29;
+layout:hbox;
+width:fill;
+valign:center;
+}
+ #label26 {
+hAlign:center;
+height:20;
+weight:1;
+color:#000000;
+font-size:14;
+width:0;
+font-family:default;
+}
+ #label14 {
+hAlign:left;
+height:fill;
+widthWrap:50.0;
+color:#000000;
+font-size:16;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #label15 {
+hAlign:center;
+height:fill;
+widthWrap:20.0;
+color:#000000;
+font-size:16;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #label24 {
+hAlign:center;
+height:1;
+color:#000000;
+font-size:14;
+background:#d3d3d3;
+width:fill;
+font-family:default;
+}
+ #panel18 {
+height:30;
+layout:hbox;
+width:fill;
+valign:center;
+}
+ #label27 {
+hAlign:center;
+height:20;
+weight:1;
+color:#000000;
+font-size:14;
+width:0;
+font-family:default;
+}
+ #label11 {
+hAlign:right;
+height:fill;
+widthWrap:20.0;
+color:#0852a5;
+font-size:16;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #label12 {
+hAlign:right;
+height:fill;
+widthWrap:62.0;
+color:#0852a5;
+font-size:16;
+width:wrap;
+font-family:default;
+vAlign:center;
+}
+ #label22 {
+hAlign:center;
+height:1;
+color:#c7c7c7;
+font-size:14;
+background:#c7c7c7;
+width:fill;
+font-family:default;
+}
+ #panel16 {
+padding-left:20;
+padding-right:20;
+padding-top:20;
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+padding-bottom:20;
+}
+ #chartview0 {
+height:fill;
+width:fill;
+}

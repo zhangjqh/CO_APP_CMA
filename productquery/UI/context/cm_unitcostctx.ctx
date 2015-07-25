@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<contexts namespace="com.ump.productquery" package="com.ump.productquery"> 
+  <context id="cm_unitcostctx" from-type="context" filter="" iscascade="false"> 
+    <field id="pk_factory" type="string"/>  
+    <field id="factoryname" type="string"/>  
+    <field id="pk_material" type="string"/>  
+    <field id="productname" type="string"/>  
+    <field id="pk_accperiodmonth" type="string"/>  
+    <field id="yearmonth" type="string"/>  
+    <field id="price" type="string"/>  
+    <field id="quantity" type="string"/>  
+    <field id="total" type="string"/>  
+    <fieldset id="productinfodetails" from="productinfodetailctx" type="string" relation="n" parent-field="" child-field="" fullclassname="" from-type="context" iscascade="false"> 
+      <field id="factorname" type="string"/>  
+      <field id="total" type="string"/>  
+      <field id="price" type="string"/>  
+      <field id="factortype" type="string"/>  
+      <field id="factoricon" type="string"/>  
+      <field id="detailcurrtype" type="string"/> 
+    </fieldset>  
+    <field id="currtype" type="string"/>  
+    <field id="mesadoc" type="string"/>  
+    <fieldset id="concern" from="concernctx" type="string" relation="1" parent-field="" child-field="" fullclassname="" from-type="context" iscascade="false"> 
+      <field id="currentState" type="string"/>  
+      <field id="iconsrc" type="string"/> 
+    </fieldset> 
+  </context> 
+</contexts>

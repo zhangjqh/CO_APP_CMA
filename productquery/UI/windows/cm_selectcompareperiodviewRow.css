@@ -1,0 +1,70 @@
+ #region1 {
+hAlign:center;
+height:fill;
+width:fill;
+layout:relative;
+vAlign:center;
+}
+ #cm_selectcompareperiodviewRowWidget {
+height:300;
+layout:hbox;
+background:#ff8000;
+width:fill;
+left:0.0;
+valign:center;
+top:80.0;
+}
+ #panel0 {
+height:44;
+background:#FFFFFF;
+layout:hbox;
+width:fill;
+valign:center;
+}
+ #panel1 {
+height:fill;
+weight:1;
+layout:hbox;
+width:0;
+valign:center;
+}
+ #checkbox0 {
+height:44;
+color:;
+font-size:18;
+width:44;
+check-on-image:checkbox_select.png;
+font-family:default;
+check-off-image:checkbox_noselect.png;
+}
+ #panel2 {
+height:fill;
+weight:1;
+layout:hbox;
+width:0;
+valign:center;
+background-image:list_row_down1.png;
+}
+ #label0 {
+hAlign:center;
+height:wrap;
+widthWrap:34.0;
+color:#000000;
+heightWrap:20.0;
+font-size:14;
+width:wrap;
+font-family:default;
+display:none;
+vAlign:center;
+}
+ #label1 {
+hAlign:left;
+height:wrap;
+widthWrap:36.0;
+color:#000000;
+heightWrap:23.0;
+font-size:16;
+width:wrap;
+font-family:default;
+vAlign:center;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<graph>
+  <model id="detailgraphctx" x="81" y="77" type="EmptyRectModel" hasTarget="false" hasSource="false">
+    <context id="detailgraphctx" from-type="context">
+      <field id="pk_factory" type="string"/>
+      <field id="pk_material" type="string"/>
+      <field id="pk_accperiodmonth" type="string"/>
+    </context>
+  </model>
+</graph>

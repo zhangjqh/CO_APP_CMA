@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<graph>
+  <model id="cm_yearmonthctx" x="346" y="262" type="EmptyRectModel" hasTarget="true" hasSource="false">
+    <context id="cm_yearmonthctx" from-type="context">
+      <field id="yearmonth" type="string"/>
+      <field id="pk_accperiodmonth" type="string"/>
+      <field id="checked" type="bool"/>
+    </context>
+  </model>
+  <model id="cm_oneyearctx" x="345" y="25" type="EmptyRectModel" hasTarget="true" hasSource="true">
+    <context id="cm_oneyearctx" from-type="context">
+      <field id="year" type="string"/>
+      <fieldset id="yearmonthlist" from="cm_yearmonthctx" type="fieldset" relation="n" fullclassname="" from-type="context"/>
+      <field id="checked" type="bool"/>
+    </context>
+  </model>
+  <model id="cm_mutiselectperiodctx" x="99" y="24" type="EmptyRectModel" hasTarget="false" hasSource="true">
+    <context id="cm_mutiselectperiodctx" from-type="context">
+      <fieldset id="yearlist" from="cm_oneyearctx" type="string" relation="n" fullclassname="" from-type="context"/>
+    </context>
+  </model>
+</graph>

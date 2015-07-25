@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<application id="38300306" appname="产品成本分析" versionCode="1" versionName="1.0.0" icon="app" theme="ios7" package="com.ump.productquery" language="zh_cn" isLibrary="false" autoCheckUpdate="false"> 
+  <permission id="internet"/>  
+  <start view="Productquery_login"/>  
+  <!--view id="demo" ref="demo.dsl"><extend screenOrientation="landscape|portrait|unspecified"/></view-->  
+  <!--view id="demo" ref="demo.dsl"><extend windowSoftInputMode="stateUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|stateVisible|stateAlwaysVisible|adjustUnspecified|adjustResize|adjustPan"/></view-->  
+  <view id="cm_settingpage" ref="cm_settingpage.dsl"> 
+    <extend screenOrientation="portrait"/> 
+  </view>
+  <view id="mutproductdetailview" ref="mutproductdetailview.dsl"> 
+    <extend screenOrientation="portrait"/> 
+  </view>
+  <view id="cm_selectcompareperiodview" ref="cm_selectcompareperiodview.mref"> 
+    <extend screenOrientation="portrait"/> 
+  </view>
+  <view id="mutproductviewwithgraph" ref="mutproductviewwithgraph.dsl"> 
+    <extend screenOrientation="portrait"/> 
+  </view>
+  <view id="cm_aboutpage" ref="cm_aboutpage.dsl"> 
+    <extend screenOrientation="portrait"/> 
+  </view>
+  <view id="cm_mutiperiodview" ref="cm_mutiperiodview.dsl"> 
+    <extend screenOrientation="portrait"/> 
+  </view>
+  <view id="detailgraph" ref="detailgraph.dsl"> 
+    <extend screenOrientation="portrait"/> 
+  </view>
+  <view id="mutproductview" ref="mutproductview.dsl"> 
+    <extend screenOrientation="portrait"/> 
+  </view>
+  <view id="cm_loginconset" ref="cm_loginconset.dsl"> 
+    <extend screenOrientation="portrait"/> 
+  </view>
+  <view id="mutfactoryviewwithgraph" ref="mutfactoryviewwithgraph.dsl"> 
+    <extend screenOrientation="portrait"/> 
+  </view>
+  <view id="mutperiodviewwithgraph" ref="mutperiodviewwithgraph.dsl"> 
+    <extend screenOrientation="portrait"/> 
+  </view>
+  <view id="Productquery_login" ref="Productquery_login.dsl"> 
+    <extend screenOrientation="portrait"/> 
+  </view>
+  <view id="cm_mutfactoryview" ref="cm_mutfactoryview.dsl"> 
+    <extend screenOrientation="portrait"/> 
+  </view>
+  <view id="cm_selectcomparefactoryview" ref="cm_selectcomparefactoryview.mref"> 
+    <extend screenOrientation="portrait"/> 
+  </view>
+  <view id="factoryref" ref="factoryref.mref"> 
+    <extend screenOrientation="portrait"/> 
+  </view>
+  <view id="cm_productfilter" ref="cm_productfilter.dsl"> 
+    <extend screenOrientation="portrait"/> 
+  </view>
+</application>
+<!--
+screenOrientation
+屏幕显示方向 
+landscape: 横向
+portrait: 竖向
+windowSoftInputMode
+View与软键盘的交互模式，可以用来避免输入法面板遮挡问题，主要控制
+a.当有焦点产生时，软键盘是隐藏还是显示
+b.是否减少活动主窗口大小以便腾出空间放软键盘
+属性说明
+stateUnspecified：软键盘的状态并没有指定，系统将选择一个合适的状态或依赖于主题的设置
+stateUnchanged：当这个activity出现时，软键盘将一直保持在上一个activity里的状态，无论是隐藏还是显示
+stateHidden：用户选择activity时，软键盘总是被隐藏
+stateAlwaysHidden：当该Activity主窗口获取焦点时，软键盘也总是被隐藏的
+stateVisible：软键盘通常是可见的
+stateAlwaysVisible：用户选择activity时，软键盘总是显示的状态
+adjustUnspecified：默认设置，通常由系统自行决定是隐藏还是显示
+adjustPan：当前窗口的内容将自动移动以便当前焦点从不被键盘覆盖和用户能总是看到输入内容的部分
+-->

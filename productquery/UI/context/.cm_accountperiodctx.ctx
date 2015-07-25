@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<graph>
+  <model id="bd_accperiod" x="305" y="236" type="EmptyRectModel" hasTarget="true" hasSource="false">
+    <context id="bd_accperiod" from-type="context">
+      <field id="pk_accperiodmonth" type="string"/>
+      <field id="yearmonth" type="string"/>
+      <field id="checked" type="string"/>
+    </context>
+  </model>
+  <model id="yearlistctx" x="297" y="43" type="EmptyRectModel" hasTarget="true" hasSource="true">
+    <context id="yearlistctx" from-type="context">
+      <fieldset id="bd_accperiodlist" from="bd_accperiod" type="fieldset" relation="n" fullclassname="" from-type="context"/>
+      <field id="year" type="string"/>
+    </context>
+  </model>
+  <model id="cm_accountperiodctx" x="51" y="39" type="EmptyRectModel" hasTarget="false" hasSource="true">
+    <context id="cm_accountperiodctx" from-type="context">
+      <fieldset id="yearlist" from="yearlistctx" type="string" relation="n" fullclassname="" from-type="context"/>
+    </context>
+  </model>
+</graph>

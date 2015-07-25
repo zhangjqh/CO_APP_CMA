@@ -1,0 +1,67 @@
+ #region1 {
+hAlign:center;
+height:fill;
+width:fill;
+layout:relative;
+vAlign:center;
+}
+ #cm_accperiodRowWidget {
+height:60;
+background:#ffffff;
+layout:hbox;
+width:fill;
+left:0.0;
+valign:center;
+top:80.0;
+pressed-color:#ff8000;
+}
+ #panel0 {
+height:44;
+background:#FFFFFF;
+layout:hbox;
+width:fill;
+valign:center;
+}
+ #panel1 {
+height:44;
+weight:1;
+layout:hbox;
+width:0;
+valign:center;
+background-image:list_row_down1.png;
+}
+ #label0 {
+hAlign:center;
+height:wrap;
+widthWrap:32.0;
+color:#000000;
+heightWrap:14.0;
+font-size:14;
+width:wrap;
+font-family:default;
+display:none;
+vAlign:center;
+}
+ #label1 {
+hAlign:left;
+height:20;
+weight:1;
+color:#000000;
+font-size:16;
+width:0;
+margin-left:20;
+margin-bottom:8;
+font-family:default;
+margin-top:8;
+vAlign:center;
+}
+ #checkbox0 {
+halign:LEFT;
+height:44;
+color:;
+font-size:17;
+width:44;
+check-on-image:choose_normal.png;
+font-family:default;
+check-off-image:choose_normal_no.png;
+}

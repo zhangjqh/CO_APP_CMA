@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<contexts namespace="com.ump.productquery" package="com.ump.productquery"> 
+  <context id="detailgraphctx" from-type="context" filter="" iscascade="false"> 
+    <field id="pk_factory" type="string"/>  
+    <field id="pk_material" type="string"/>  
+    <field id="pk_accperiodmonth" type="string"/> 
+  </context> 
+</contexts>

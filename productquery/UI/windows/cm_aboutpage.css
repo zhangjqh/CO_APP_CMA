@@ -1,0 +1,119 @@
+ #cm_aboutpage {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+}
+ #viewPage0 {
+halign:center;
+height:fill;
+layout:vbox;
+background:#F5F5F5;
+width:fill;
+}
+ #navigatorbar0 {
+padding-right:8;
+padding-left:8;
+height:44.0;
+color:#000000;
+font-size:17;
+layout:hbox;
+width:fill;
+font-family:default;
+valign:center;
+background-image:navbar_login.png;
+}
+ #button0 {
+padding-left:20;
+hAlign:left;
+height:44;
+color:#e50011;
+pressed-image:btn_back_touch;
+font-size:17;
+width:88;
+font-family:default;
+font-pressed-color:#f2adb2;
+vAlign:center;
+background-image:btn_back;
+}
+ #label0 {
+hAlign:center;
+height:fill;
+weight:1;
+color:#000000;
+font-size:14;
+width:0;
+font-family:default;
+vAlign:center;
+}
+ #panel0 {
+halign:center;
+height:0;
+weight:1;
+layout:vbox;
+width:fill;
+margin-top:50;
+}
+ #button2 {
+hAlign:center;
+height:72;
+color:#e50011;
+font-size:17;
+width:72;
+font-family:default;
+font-pressed-color:#f2adb2;
+vAlign:center;
+background-image:app.png;
+}
+ #label2 {
+hAlign:center;
+height:wrap;
+widthWrap:126.0;
+color:#800000;
+heightWrap:29.0;
+font-size:20;
+width:wrap;
+margin-bottom:20;
+font-family:default;
+margin-top:20;
+vAlign:center;
+}
+ #label3 {
+hAlign:center;
+height:wrap;
+color:#ff0000;
+heightWrap:20.0;
+font-size:14;
+width:100;
+font-family:default;
+vAlign:center;
+}
+ #panel1 {
+halign:center;
+height:60.0;
+layout:vbox;
+width:fill;
+}
+ #button1 {
+hAlign:center;
+height:37;
+color:#e50011;
+font-size:17;
+width:73;
+font-family:default;
+font-pressed-color:#f2adb2;
+vAlign:center;
+background-image:about_nclogo.png;
+}
+ #label1 {
+hAlign:center;
+height:wrap;
+widthWrap:286.0;
+color:#0080c0;
+heightWrap:20.0;
+font-size:14;
+width:wrap;
+margin-bottom:40;
+font-family:default;
+vAlign:center;
+}

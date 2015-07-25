@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<contexts namespace="com.ump.productquery" package="com.ump.productquery"> 
+  <context id="cm_mutiselectperiodctx" from-type="context" filter="" iscascade="false"> 
+    <fieldset id="yearlist" from="cm_oneyearctx" type="string" relation="n" parent-field="" child-field="" fullclassname="" from-type="context" iscascade="false"> 
+      <field id="year" type="string"/>  
+      <fieldset id="yearmonthlist" from="cm_yearmonthctx" type="fieldset" relation="n" parent-field="" child-field="" fullclassname="" from-type="context" iscascade="false"> 
+        <field id="yearmonth" type="string"/>  
+        <field id="pk_accperiodmonth" type="string"/>  
+        <field id="checked" type="bool"/> 
+      </fieldset>  
+      <field id="checked" type="bool"/> 
+    </fieldset> 
+  </context> 
+</contexts>

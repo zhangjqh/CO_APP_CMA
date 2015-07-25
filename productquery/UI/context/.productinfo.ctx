@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<graph>
+  <model id="productinfo" x="221" y="102" type="EmptyRectModel" hasTarget="true" hasSource="false">
+    <context id="productinfo" from-type="context">
+      <field id="productcode" type="string"/>
+      <field id="productname" type="string"/>
+      <field id="price" type="string"/>
+      <field id="quantity" type="string"/>
+      <field id="total" type="string"/>
+    </context>
+  </model>
+  <model id="productlist" x="10" y="57" type="EmptyRectModel" hasTarget="false" hasSource="true">
+    <context id="productlist" from-type="context">
+      <fieldset id="productinfolist" from="productinfo" type="string" relation="n" fullclassname="" from-type="context"/>
+      <field id="pk_factory" type="string"/>
+      <field id="syear" type="string"/>
+      <field id="speriod" type="string"/>
+      <field id="factoryname" type="string"/>
+    </context>
+  </model>
+</graph>

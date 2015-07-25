@@ -1,0 +1,61 @@
+ #region1 {
+height:fill;
+layout:relative;
+width:fill;
+}
+ #cm_accperiodGroupRow {
+height:70;
+layout:hbox;
+width:320.0;
+left:0.0;
+valign:center;
+top:50.0;
+}
+ #panel4 {
+halign:center;
+height:30;
+layout:vbox;
+background:#f8f8f8;
+width:fill;
+}
+ #panel21 {
+height:29;
+background:#f8f8f8;
+layout:hbox;
+width:fill;
+valign:center;
+}
+ #panel8 {
+padding-right:8;
+halign:center;
+height:fill;
+background:#f8f8f8;
+layout:vbox;
+width:fill;
+}
+ #panel11 {
+height:fill;
+background:#f8f8f8;
+width:fill;
+layout:hbox;
+valign:center;
+}
+ #label5 {
+hAlign:left;
+height:fill;
+color:#6f6f6f;
+font-size:14;
+width:fill;
+margin-left:20;
+font-family:default;
+vAlign:center;
+}
+ #label0 {
+hAlign:center;
+height:1;
+color:#c7c7c7;
+background:#c7c7c7;
+font-size:14;
+width:fill;
+font-family:default;
+}

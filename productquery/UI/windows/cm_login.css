@@ -1,0 +1,140 @@
+ #cm_login {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+}
+ #viewPage0 {
+halign:center;
+height:fill;
+layout:vbox;
+background:#F5F5F5;
+width:fill;
+background-image:contest_bg;
+}
+ #navigatorbar0 {
+height:44.0;
+color:#e50011;
+pressed-image:nav;
+font-size:17;
+layout:hbox;
+width:fill;
+background-image-dis:navbar_login;
+font-family:default;
+valign:center;
+background-image:navbar_login;
+}
+ #button0 {
+hAlign:center;
+height:44;
+color:#e50011;
+font-size:18;
+width:84;
+font-family:default;
+vAlign:center;
+}
+ #label0 {
+hAlign:center;
+height:25.0;
+weight:1;
+color:#000000;
+font-size:17;
+width:0;
+font-family:default;
+vAlign:center;
+}
+ #button1 {
+margin-right:12;
+hAlign:center;
+height:44;
+color:#e50011;
+font-size:17;
+width:72;
+font-family:default;
+vAlign:center;
+}
+ #textbox0 {
+padding-left:39;
+halign:LEFT;
+pressed-image:textbox;
+width:296;
+background-image-dis:textbox;
+margin-right:12;
+height:44;
+color:#333333;
+font-size:15;
+margin-left:12;
+font-family:default;
+margin-top:2;
+background-image:textbox_user;
+}
+ #textbox1 {
+padding-left:39;
+halign:LEFT;
+pressed-image:textbox;
+width:296;
+background-image-dis:textbox;
+margin-right:12;
+height:44;
+color:#333333;
+font-size:15;
+margin-left:12;
+font-family:default;
+margin-top:4;
+background-image:textbox_passwd;
+}
+ #panel0 {
+margin-right:12;
+height:32;
+layout:hbox;
+width:fill;
+margin-left:12;
+margin-top:12;
+valign:center;
+}
+ #label2 {
+hAlign:center;
+height:14.0;
+weight:1;
+color:#000000;
+font-size:12;
+width:0;
+font-family:default;
+vAlign:center;
+}
+ #label1 {
+hAlign:center;
+height:fill;
+color:#000000;
+font-size:14;
+width:90.0;
+font-family:default;
+vAlign:center;
+}
+ #switch0 {
+padding-left:2;
+height:fill;
+switch-trackon-image:slideswitch;
+color:#e50011;
+background:#167ef8;
+font-size:18;
+width:51;
+background-image-dis:slideswitch;
+font-family:default;
+switch-trackoff-image:switch_off;
+}
+ #button2 {
+hAlign:center;
+width:fill;
+font-pressed-color:#ffffff;
+pressed-color:#f599a0;
+margin-right:12;
+height:44;
+color:#e50011;
+background:#f5f5f5;
+font-size:20;
+margin-left:12;
+font-family:default;
+margin-top:12;
+vAlign:center;
+}
