@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<application id="38300306" appname="产品成本分析" versionCode="12" versionName="1.2.0" icon="app" theme="ios7" package="com.ump.productquery" language="zh_cn" isLibrary="false" autoCheckUpdate="false" jsengine="v2.0"> 
+<application id="38300306" appname="成本+" versionCode="12" versionName="1.2.0" icon="app" theme="ios7" package="com.ump.productquery" language="zh_cn" isLibrary="false" autoCheckUpdate="false" jsengine="v2.0"> 
   <permission id="internet"/>  
   <start view="Productquery_login"/>  
   <!--view id="demo" ref="demo.dsl"><extend screenOrientation="landscape|portrait|unspecified"/></view-->  
@@ -9,12 +9,6 @@
     <extend screenOrientation="portrait"/> 
   </view>  
   <view id="mutproductdetailview" ref="mutproductdetailview.dsl" include="true"> 
-    <extend screenOrientation="portrait"/> 
-  </view>  
-  <view id="cm_selectcompareperiodview" ref="cm_selectcompareperiodview.mref" include="true"> 
-    <extend screenOrientation="portrait"/> 
-  </view>  
-  <view id="mutproductviewwithgraph" ref="mutproductviewwithgraph.dsl" include="true"> 
     <extend screenOrientation="portrait"/> 
   </view>  
   <view id="cm_aboutpage" ref="cm_aboutpage.dsl" include="true"> 
@@ -32,27 +26,18 @@
   <view id="cm_loginconset" ref="cm_loginconset.dsl" include="true"> 
     <extend screenOrientation="portrait"/> 
   </view>  
-  <view id="mutfactoryviewwithgraph" ref="mutfactoryviewwithgraph.dsl" include="true"> 
-    <extend screenOrientation="portrait"/> 
-  </view>  
-  <view id="mutperiodviewwithgraph" ref="mutperiodviewwithgraph.dsl" include="true"> 
-    <extend screenOrientation="portrait"/> 
-  </view>  
   <view id="Productquery_login" ref="Productquery_login.dsl" include="true"> 
     <extend screenOrientation="portrait"/> 
   </view>  
   <view id="cm_mutfactoryview" ref="cm_mutfactoryview.dsl" include="true"> 
     <extend screenOrientation="portrait"/> 
   </view>  
-  <view id="cm_selectcomparefactoryview" ref="cm_selectcomparefactoryview.mref" include="true"> 
-    <extend screenOrientation="portrait"/> 
-  </view>  
-  <view id="factoryref" ref="factoryref.mref" include="true"> 
-    <extend screenOrientation="portrait"/> 
-  </view>  
   <view id="cm_productfilter" ref="cm_productfilter.dsl" include="true"> 
     <extend screenOrientation="portrait"/> 
-  </view> 
+  </view>  
+  <view id="Factory_referlist" ref="Factory_referlist.mref" include="true"/>  
+  <view id="MultiFactory_referlist" ref="MultiFactory_referlist.mref" include="true"/>  
+  <view id="MultiAccperiod_referlist" ref="MultiAccperiod_referlist.mref" include="true"/> 
 </application>
 <!--
 screenOrientation

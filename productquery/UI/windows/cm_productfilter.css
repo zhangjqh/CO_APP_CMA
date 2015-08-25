@@ -3,6 +3,7 @@ halign:center;
 height:fill;
 layout:vbox;
 width:fill;
+valign:TOP;
 }
  #viewPage0 {
 halign:center;
@@ -10,14 +11,16 @@ height:fill;
 layout:vbox;
 background:#F5F5F5;
 width:fill;
+valign:TOP;
 }
  #navigatorbar0 {
-padding-left:8;
 padding-right:8;
+padding-left:8;
+halign:LEFT;
 height:44.0;
 color:#000000;
-layout:hbox;
 font-size:17;
+layout:hbox;
 width:fill;
 font-family:default;
 valign:center;
@@ -25,7 +28,7 @@ background-image:navbar_login.png;
 }
  #button0 {
 padding-left:20;
-hAlign:left;
+halign:left;
 height:44;
 color:#e50011;
 pressed-image:btn_back_touch;
@@ -33,18 +36,18 @@ font-size:17;
 width:88;
 font-family:default;
 font-pressed-color:#f2adb2;
-vAlign:center;
+valign:center;
 background-image:btn_back;
 }
  #label0 {
-hAlign:center;
+halign:center;
 height:fill;
 weight:1;
 color:#000000;
 font-size:14;
 width:0;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #search0 {
 height:43;
@@ -69,6 +72,7 @@ height:0;
 layout:vbox;
 width:fill;
 display:none;
+valign:TOP;
 }
  #image0 {
 height:96;
@@ -76,7 +80,7 @@ width:96;
 margin-top:50;
 }
  #label1 {
-hAlign:center;
+halign:center;
 height:wrap;
 widthWrap:85.0;
 color:#c7c7c7;
@@ -84,4 +88,5 @@ heightWrap:23.0;
 font-size:16;
 width:wrap;
 font-family:default;
+valign:center;
 }

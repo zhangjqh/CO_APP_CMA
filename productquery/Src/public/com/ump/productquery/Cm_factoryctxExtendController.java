@@ -53,7 +53,7 @@ public class Cm_factoryctxExtendController extends Cm_factoryctxController
     	}
 		argsMap.put("keyword", json.opt("searchfield"));
 		String current_pk_factory = (String) argsMap.get("current_pk_factory");
-		String lastusedfactoryString = (String) argsMap.get("lastusedfactorystr");
+		String lastusedfactoryString = String.valueOf(argsMap.get("lastusedfactorystr")) ;
 		if ("".equals(lastusedfactoryString)) {
 		      lastusedfactoryString = "[]";
 		    }

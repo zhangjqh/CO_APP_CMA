@@ -1,4 +1,4 @@
- #cm_aboutpage {
+ #Factory_referlist {
 halign:center;
 height:fill;
 layout:vbox;
@@ -8,8 +8,8 @@ valign:TOP;
  #viewPage0 {
 halign:center;
 height:fill;
-layout:vbox;
 background:#F5F5F5;
+layout:vbox;
 width:fill;
 valign:TOP;
 }
@@ -44,81 +44,86 @@ halign:center;
 height:fill;
 weight:1;
 color:#000000;
-font-size:14;
+font-size:17;
 width:0;
 font-family:default;
 valign:center;
 }
- #panel0 {
+ #button1 {
+halign:right;
+height:44;
+color:#e50011;
+font-size:17;
+width:88;
+font-family:default;
+font-pressed-color:#f2adb2;
+valign:center;
+}
+ #listviewdefine0 {
 halign:center;
 height:0;
 weight:1;
 layout:vbox;
 width:fill;
-margin-top:50;
 valign:TOP;
 }
- #button2 {
-halign:center;
-height:72;
-color:#e50011;
-font-size:17;
-width:72;
-font-family:default;
-font-pressed-color:#f2adb2;
+ #panel0 {
+border-bottom-width:1;
+halign:LEFT;
+height:30;
+background:#f7f7f7;
+layout:hbox;
+width:fill;
 valign:center;
-background-image:app.png;
+border-bottom-color:#c7c7c7;
 }
- #label2 {
+ #label5 {
+halign:center;
+height:fill;
+widthWrap:34.0;
+color:#6f6f6f;
+font-size:14;
+width:wrap;
+margin-left:15;
+font-family:default;
+valign:center;
+}
+ #panel6 {
+border-bottom-width:1;
+halign:LEFT;
+height:43.0;
+layout:hbox;
+background:#FFFFFF;
+width:fill;
+valign:center;
+border-bottom-color:#c7c7c7;
+}
+ #checkbox0 {
+height:44;
+width:44;
+check-on-image:checkbox_select;
+check-off-image:checkbox_noselect;
+}
+ #label4 {
 halign:center;
 height:wrap;
-widthWrap:54.0;
-color:#800000;
-heightWrap:29.0;
-font-size:20;
+widthWrap:34.0;
+color:#000000;
+heightWrap:20.0;
+font-size:14;
 width:wrap;
-margin-bottom:20;
 font-family:default;
-margin-top:20;
+display:none;
 valign:center;
 }
  #label3 {
-halign:center;
+halign:left;
 height:wrap;
-color:#ff0000;
+color:#000000;
 heightWrap:20.0;
 font-size:14;
-width:100;
-font-family:default;
-valign:center;
-}
- #panel1 {
-halign:center;
-height:60.0;
-layout:vbox;
 width:fill;
-valign:TOP;
-}
- #button1 {
-halign:center;
-height:37;
-color:#e50011;
-font-size:17;
-width:73;
-font-family:default;
-font-pressed-color:#f2adb2;
-valign:center;
-background-image:about_nclogo.png;
-}
- #label1 {
-halign:center;
-height:wrap;
-widthWrap:286.0;
-color:#0080c0;
-heightWrap:20.0;
-font-size:14;
-width:wrap;
-margin-bottom:40;
+margin-left:12;
 font-family:default;
 valign:center;
 }

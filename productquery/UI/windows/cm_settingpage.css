@@ -3,6 +3,7 @@ halign:center;
 height:fill;
 width:fill;
 layout:vbox;
+valign:TOP;
 }
  #viewPage0 {
 halign:center;
@@ -10,14 +11,16 @@ height:fill;
 width:fill;
 background:#F5F5F5;
 layout:vbox;
+valign:TOP;
 }
  #navigatorbar0 {
-padding-right:8;
 padding-left:8;
+padding-right:8;
+halign:LEFT;
 height:44.0;
 color:#000000;
-font-size:17;
 layout:hbox;
+font-size:17;
 width:fill;
 font-family:default;
 valign:center;
@@ -25,7 +28,7 @@ background-image:navbar_login.png;
 }
  #button1 {
 padding-left:20;
-hAlign:left;
+halign:left;
 pressed-image:btn_back_touch;
 width:88;
 background-image-dis:button;
@@ -34,43 +37,45 @@ height:44;
 color:#e50011;
 font-size:17;
 font-family:default;
-vAlign:center;
+valign:center;
 background-image:btn_back;
 }
  #label0 {
-hAlign:center;
+halign:center;
 height:fill;
 widthWrap:216.0;
 color:#000000;
 font-size:14;
 width:wrap;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #panel1 {
 halign:center;
 height:32;
 width:fill;
 layout:vbox;
+valign:TOP;
 }
  #panel2 {
-padding-right:15;
 padding-left:15;
+padding-right:15;
+halign:LEFT;
 height:44;
-background:#ffffff;
 layout:hbox;
+background:#ffffff;
 width:fill;
 valign:center;
 }
  #label1 {
-hAlign:left;
+halign:left;
 height:fill;
 weight:1;
 color:#000000;
 font-size:17;
 width:0;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #image1 {
 height:12;
@@ -81,25 +86,27 @@ halign:center;
 height:32;
 width:fill;
 layout:vbox;
+valign:TOP;
 }
  #panel4 {
-padding-left:15;
 padding-right:15;
+padding-left:15;
+halign:LEFT;
 height:44;
-background:#ffffff;
 layout:hbox;
+background:#ffffff;
 width:fill;
 valign:center;
 }
  #label2 {
-hAlign:left;
+halign:left;
 height:fill;
 weight:1;
 color:#000000;
 font-size:17;
 width:0;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #image2 {
 height:12;
@@ -110,9 +117,10 @@ halign:center;
 height:32;
 width:fill;
 layout:vbox;
+valign:TOP;
 }
  #button0 {
-hAlign:center;
+halign:center;
 pressed-image:nc_login_touch.9.png;
 width:fill;
 background-image-dis:nc_unlogin.9.png;
@@ -122,7 +130,7 @@ color:#ffffff;
 font-size:20;
 margin-left:12;
 font-family:default;
-vAlign:center;
+valign:center;
 background-image:nc_login.9.png;
 }
  #panel0 {
@@ -131,4 +139,5 @@ height:0;
 weight:1;
 layout:vbox;
 width:fill;
+valign:TOP;
 }

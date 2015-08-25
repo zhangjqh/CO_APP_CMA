@@ -3,6 +3,7 @@ halign:center;
 height:fill;
 layout:vbox;
 width:fill;
+valign:TOP;
 }
  #viewPage0 {
 halign:center;
@@ -10,10 +11,12 @@ height:fill;
 layout:vbox;
 background:#F5F5F5;
 width:fill;
+valign:TOP;
 }
  #navigatorbar0 {
 padding-left:8;
 padding-right:8;
+halign:LEFT;
 height:44.0;
 color:#000000;
 layout:hbox;
@@ -25,7 +28,7 @@ background-image:nav.png;
 }
  #button0 {
 padding-left:20;
-hAlign:left;
+halign:left;
 height:44;
 color:#e50011;
 pressed-image:btn_back_touch;
@@ -33,21 +36,21 @@ font-size:17;
 width:88;
 font-family:default;
 font-pressed-color:#f2adb2;
-vAlign:center;
+valign:center;
 background-image:btn_back;
 }
  #label0 {
-hAlign:center;
+halign:center;
 height:fill;
 weight:1;
 color:#000001;
 font-size:17;
 width:0;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #button1 {
-hAlign:right;
+halign:right;
 height:44;
 color:#e50011;
 pressed-image:pie_btn_touch.png;
@@ -55,22 +58,24 @@ font-size:17;
 width:44;
 font-family:default;
 font-pressed-color:#f2adb2;
-vAlign:center;
+valign:center;
 background-image:pie_btn.png;
 }
  #panel10 {
+halign:LEFT;
 height:70;
-layout:hbox;
 background:#f8f8f8;
+layout:hbox;
 width:fill;
 valign:center;
 }
  #panel9 {
 halign:center;
 height:fill;
+background:#f8f8f8;
 layout:vbox;
 width:70;
-background:#f8f8f8;
+valign:TOP;
 }
  #image0 {
 height:70;
@@ -84,16 +89,19 @@ weight:1;
 background:#f8f8f8;
 layout:vbox;
 width:0;
+valign:TOP;
 }
  #panel8 {
+halign:LEFT;
 height:35;
-layout:hbox;
 background:#f8f8f8;
+layout:hbox;
 width:fill;
 valign:top;
 }
  #panel11 {
 margin-right:8;
+halign:LEFT;
 height:fill;
 widthWrap:120.0;
 background:#f8f8f8;
@@ -102,7 +110,7 @@ width:wrap;
 valign:top;
 }
  #label13 {
-hAlign:center;
+halign:center;
 height:wrap;
 widthWrap:126.0;
 color:#000000;
@@ -111,10 +119,10 @@ font-size:14;
 width:wrap;
 font-family:default;
 display:none;
-vAlign:center;
+valign:center;
 }
  #label16 {
-hAlign:center;
+halign:center;
 height:wrap;
 widthWrap:34.0;
 color:#000000;
@@ -123,10 +131,10 @@ font-size:14;
 width:wrap;
 font-family:default;
 display:none;
-vAlign:center;
+valign:center;
 }
  #label1 {
-hAlign:left;
+halign:left;
 height:20;
 widthWrap:50.0;
 color:#000000;
@@ -134,17 +142,18 @@ font-size:16;
 width:wrap;
 font-family:default;
 margin-top:11;
-vAlign:center;
+valign:center;
 }
  #panel12 {
+halign:LEFT;
 height:fill;
+background:#f8f8f8;
 layout:hbox;
 width:50;
-background:#f8f8f8;
 valign:top;
 }
  #button4 {
-hAlign:center;
+halign:center;
 pressed-image:compare_btn_touch.png;
 width:35;
 font-pressed-color:#ffffff;
@@ -154,18 +163,20 @@ color:#ffffff;
 font-size:13;
 font-family:default;
 margin-top:11;
-vAlign:center;
+valign:center;
 background-image:compare_btn.png;
 }
  #panel1 {
+halign:LEFT;
 height:35;
-background:#f8f8f8;
 layout:hbox;
+background:#f8f8f8;
 width:fill;
 valign:top;
 }
  #panel13 {
 padding-right:8;
+halign:LEFT;
 height:fill;
 weight:1;
 background:#f8f8f8;
@@ -174,7 +185,7 @@ width:0;
 valign:top;
 }
  #label15 {
-hAlign:center;
+halign:center;
 height:wrap;
 widthWrap:192.0;
 color:#000000;
@@ -183,10 +194,10 @@ font-size:14;
 width:wrap;
 font-family:default;
 display:none;
-vAlign:center;
+valign:center;
 }
  #label14 {
-hAlign:center;
+halign:center;
 height:wrap;
 widthWrap:134.0;
 color:#000000;
@@ -195,10 +206,10 @@ font-size:14;
 width:wrap;
 font-family:default;
 display:none;
-vAlign:center;
+valign:center;
 }
  #label2 {
-hAlign:left;
+halign:left;
 height:20;
 widthWrap:80.0;
 color:#000000;
@@ -206,43 +217,46 @@ font-size:13;
 width:wrap;
 font-family:default;
 margin-top:5;
-vAlign:center;
+valign:center;
 }
  #panel14 {
+halign:LEFT;
 height:fill;
+background:#f8f8f8;
 layout:hbox;
 width:104;
-background:#f8f8f8;
 valign:top;
 }
  #label20 {
-hAlign:center;
+halign:center;
 height:20;
 weight:1;
 color:#000000;
 font-size:14;
 width:0;
 font-family:default;
+valign:center;
 }
  #label3 {
 margin-right:8;
-hAlign:right;
+halign:right;
 height:20;
 color:#000000;
 font-size:13;
 width:53.0;
 font-family:default;
 margin-top:5;
-vAlign:center;
+valign:center;
 }
  #panel2 {
+halign:LEFT;
 height:35;
 layout:hbox;
 width:50;
 valign:top;
 }
  #button5 {
-hAlign:center;
+halign:center;
 height:18;
 color:#ffffff;
 pressed-image:compare_btn_touch.png;
@@ -251,12 +265,12 @@ width:35;
 font-family:default;
 margin-top:5;
 font-pressed-color:#ffffff;
-vAlign:center;
+valign:center;
 background-image:compare_btn.png;
 }
  #label18 {
 margin-right:15;
-hAlign:center;
+halign:center;
 height:1;
 color:#c7c7c7;
 font-size:14;
@@ -264,11 +278,13 @@ background:#d2d2d2;
 width:fill;
 margin-left:20;
 font-family:default;
+valign:center;
 }
  #panel3 {
 padding-right:15;
 padding-left:15;
 padding-top:5;
+halign:LEFT;
 height:100;
 layout:hbox;
 background:#f8f8f8;
@@ -284,71 +300,77 @@ height:fill;
 layout:vbox;
 background:#f8f8f8;
 width:84;
+valign:TOP;
 }
  #panel17 {
+halign:LEFT;
 height:29;
 layout:hbox;
 width:fill;
 valign:center;
 }
  #label10 {
-hAlign:left;
+halign:left;
 height:fill;
 widthWrap:57.0;
 color:#000000;
 font-size:16;
 width:wrap;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #label25 {
-hAlign:center;
+halign:center;
 height:1;
 color:#000000;
 background:#d2d2d2;
 font-size:14;
 width:fill;
 font-family:default;
+valign:center;
 }
  #panel18 {
+halign:LEFT;
 height:29;
 layout:hbox;
 width:fill;
 valign:center;
 }
  #label7 {
-hAlign:left;
+halign:left;
 height:fill;
 color:#000000;
 font-size:16;
 width:40;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #label26 {
-hAlign:center;
+halign:center;
 height:1;
 color:#000000;
 background:#d2d2d2;
 font-size:14;
 width:fill;
 font-family:default;
+valign:center;
 }
  #panel19 {
+halign:LEFT;
 height:30;
 layout:hbox;
 width:fill;
 valign:center;
 }
  #label4 {
-hAlign:left;
+halign:left;
 height:fill;
 widthWrap:74.0;
 color:#000000;
 font-size:16;
 width:wrap;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #panel7 {
 halign:center;
@@ -357,6 +379,7 @@ background:#d2d2d2;
 layout:vbox;
 width:1;
 margin-top:6;
+valign:TOP;
 }
  #panel6 {
 padding-left:5;
@@ -365,138 +388,148 @@ height:fill;
 layout:vbox;
 background:#f8f8f8;
 width:fill;
+valign:TOP;
 }
  #panel4 {
+halign:LEFT;
 height:29;
 layout:hbox;
 width:fill;
 valign:center;
 }
  #label22 {
-hAlign:center;
+halign:center;
 height:20;
 weight:1;
 color:#000000;
 font-size:16;
 width:0;
 font-family:default;
+valign:center;
 }
  #label11 {
-hAlign:center;
+halign:center;
 height:fill;
 widthWrap:20.0;
 color:#0852a5;
 font-size:16;
 width:wrap;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #label12 {
-hAlign:left;
+halign:left;
 height:fill;
 widthWrap:50.0;
 color:#0852a5;
 font-size:16;
 width:wrap;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #label17 {
-hAlign:center;
+halign:center;
 height:1;
 color:#000000;
 background:#d2d2d2;
 font-size:14;
 width:fill;
 font-family:default;
+valign:center;
 }
  #panel15 {
+halign:LEFT;
 height:29;
 layout:hbox;
 width:fill;
 valign:center;
 }
  #label23 {
-hAlign:center;
+halign:center;
 height:20;
 weight:1;
 color:#000000;
 font-size:14;
 width:0;
 font-family:default;
+valign:center;
 }
  #label8 {
-hAlign:left;
+halign:left;
 height:fill;
 widthWrap:80.0;
 color:#000000;
 font-size:16;
 width:wrap;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #label9 {
-hAlign:center;
+halign:center;
 height:fill;
 widthWrap:20.0;
 color:#000000;
 font-size:16;
 width:wrap;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #label21 {
-hAlign:center;
+halign:center;
 height:1;
 color:#000000;
 background:#d2d2d2;
 font-size:14;
 width:fill;
 font-family:default;
+valign:center;
 }
  #panel16 {
+halign:LEFT;
 height:30;
 layout:hbox;
 width:fill;
 valign:center;
 }
  #label24 {
-hAlign:center;
+halign:center;
 height:20;
 weight:1;
 color:#000000;
 font-size:14;
 width:0;
 font-family:default;
+valign:center;
 }
  #label5 {
-hAlign:right;
+halign:right;
 height:fill;
 widthWrap:20.0;
 color:#0852a5;
 font-size:16;
 width:wrap;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #label6 {
-hAlign:right;
+halign:right;
 height:fill;
 widthWrap:72.0;
 color:#0852a5;
 font-size:16;
 width:wrap;
 font-family:default;
-vAlign:center;
+valign:center;
 }
  #label19 {
-hAlign:center;
+halign:center;
 height:1;
 color:#c7c7c7;
 font-size:14;
 background:#c7c7c7;
 width:fill;
 font-family:default;
+valign:center;
 }
  #listview0 {
 weight:1;

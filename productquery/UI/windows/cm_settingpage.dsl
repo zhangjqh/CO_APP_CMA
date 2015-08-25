@@ -6,7 +6,6 @@
     <action id="openAboutpage" viewid="com.ump.productquery.Cm_aboutpage" method="UMView.open" isKeep="true" animation-type="Fade"/>
     <action id="openConsettingpage" viewid="com.ump.productquery.Cm_loginconset" method="UMView.open" isKeep="true" animation-type="Fade"/>
     <action message="您是否确认退出？" id="openExitDialog" title="退出确认" okbuttontitle="确定" okaction="ExitOk" style="ok-cancel" method="UMView.openDialog" cancelbuttontitle="取消"/>
-    <action id="ExitOk" method="ExitOk"/>
     <div id="viewPage0">
         <navigatorbar id="navigatorbar0" title="设置">
             <input id="button1" value="返回" onclick="back" type="button"/>

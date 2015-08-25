@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<window xmlns:web="http://www.yonyou.com/uapmobile/dsl" id="Factory_referlist" context="ref" controller="MultiFactory_referlistController" namespace="com.ump.productquery">  
+    <import ref="MultiFactory_referlist.css" type="css"/>  
+    <action id="onCancel" resultcode="0" method="UMView.close"/>  
+    <action id="close" resultcode="0" method="UMView.close"/>  
+    <action id="loaddata" lastusedfactorystr="#{lastusedfactorys}" viewid="com.ump.productquery.Cm_mutiselectfactoryctxExtendController" keyword="#{searchfield}" callback="this.scrolltofisrtselectedindex()" action="factoryCompareSelect" isDataCollect="true" method="UMService.callAction" autoDataBinding="true" refresultstr="#{plug.refresultstr}"/>  
+    <div id="viewPage0" onload="this.load_reflist()"> 
+        <navigatorbar id="navigatorbar0"> 
+            <input id="button0" value="返回" onclick="close" type="button"/>  
+            <label id="label0">对比工厂选择</label>  
+            <input id="button1" value="确定" onclick="this.returnResult()" type="button"/> 
+        </navigatorbar>  
+        <search id="search0" bindField="searchfield" placeholder="请输入关键字" localstorage="true" onsearch="this.onSearch()"/>  
+        <listView id="listviewdefine0" bindfield="factorygrouplist,factorylist" cursorAction="cursorreflistalias" syncContext="reflist" onitemclick="this.onClickListRow()"> 
+            <div id="panel0"> 
+                <label id="label5" bindfield="factorygroupname">label</label> 
+            </div>  
+            <div id="panel6"> 
+                <input id="checkbox0" bindfield="checked" type="checkbox" checked="checked"/>  
+                <label id="label4" bindfield="factorycode">label</label>  
+                <label id="label3" bindfield="factoryname" type="multiline">多行文本</label> 
+            </div> 
+        </listView> 
+    </div> 
+</window>

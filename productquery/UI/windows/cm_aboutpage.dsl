@@ -10,8 +10,8 @@
         </navigatorbar>
         <div id="panel0">
             <input id="button2" type="button"/>
-            <label id="label2">产品成本分析</label>
-            <label id="label3">版本号： 1.0.0</label> 
+            <label id="label2">成本+</label>
+            <label id="label3">版本号： 1.2.0</label> 
         </div>
         <div id="panel1">
             <input id="button1" type="button"/> 

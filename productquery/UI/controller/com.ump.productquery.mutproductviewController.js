@@ -140,37 +140,37 @@ function com$ump$productquery$mutproductviewController$openmenu(sender, args){
 	var dropdownlist =[];
 	var orderbypriceup={
 		action:"this.orderbypriceup()",
-		image:"asc.png",
+		//image:"asc.png",
 		name:"单位成本升序"
 	};
 	dropdownlist.push(orderbypriceup);
 	var orderbypricedown={
 		action:"this.orderbypricedown()",
-		image:"desc.png",
+		//image:"desc.png",
 		name:"单位成本降序"
 	};
 	dropdownlist.push(orderbypricedown);
 	var orderbysequp={
 		action:"this.orderbysequp()",
-		image:"asc.png",
+		//image:"asc.png",
 		name:"变动比率升序"
 	};
 	dropdownlist.push(orderbysequp);
 	var orderbyseqdown={
 		action:"this.orderbyseqdown()",
-		image:"desc.png",
+		//image:"desc.png",
 		name:"变动比率降序"
 	};
 	dropdownlist.push(orderbyseqdown);
 	var orderbycodeup={
 		action:"this.orderbycodeup()",
-		image:"asc.png",
+		//image:"asc.png",
 		name:"产品编码升序"
 	};
 	dropdownlist.push(orderbycodeup);
 	var orderbycodedown={
 		action:"this.orderbycodedown()",
-		image:"desc.png",
+		//image:"desc.png",
 		name:"产品编码降序"
 	};
 	dropdownlist.push(orderbycodedown);
@@ -178,8 +178,8 @@ function com$ump$productquery$mutproductviewController$openmenu(sender, args){
 	var params={
 		controlid : "imagebutton2",
 		dropDownListWidth : 170,
-		dropItemsArray : dropdownlist,
-		"background-image" : "dropdownlist.png"
+		dropItemsArray : dropdownlist
+		//"background-image" : "dropdownlist.png"
 	};
 	var openJsonString = $jsonToString(params);
 	UM_NativeCall.callService("UMMenu.openDropDownList", openJsonString);
@@ -324,6 +324,7 @@ function com$ump$productquery$mutproductviewController$updatebyuserid(sender,arg
 		UM_NativeCall.callService("UMView.open", openJsonString);		
 	}
 }
+
 com.ump.productquery.mutproductviewController.prototype = {
     loadall : com$ump$productquery$mutproductviewController$loadall,
     loadmyconcern : com$ump$productquery$mutproductviewController$loadmyconcern,

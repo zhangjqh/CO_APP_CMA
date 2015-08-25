@@ -13,7 +13,7 @@
     <div id="viewPage0" onload="loadconfig">
         <div id="panel1">
             <image id="image3" scaletype="fitcenter" src="loginapp.png"/>
-            <label id="label5">产品成本分析</label> 
+            <label id="label5">成本+</label> 
         </div>
         <label id="label0"/>
         <div id="panel2">
