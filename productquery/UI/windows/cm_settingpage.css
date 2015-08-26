@@ -14,13 +14,13 @@ layout:vbox;
 valign:TOP;
 }
  #navigatorbar0 {
-padding-left:8;
 padding-right:8;
+padding-left:8;
 halign:LEFT;
 height:44.0;
 color:#000000;
-layout:hbox;
 font-size:17;
+layout:hbox;
 width:fill;
 font-family:default;
 valign:center;
@@ -58,12 +58,12 @@ layout:vbox;
 valign:TOP;
 }
  #panel2 {
-padding-left:15;
 padding-right:15;
+padding-left:15;
 halign:LEFT;
 height:44;
-layout:hbox;
 background:#ffffff;
+layout:hbox;
 width:fill;
 valign:center;
 }
@@ -89,12 +89,12 @@ layout:vbox;
 valign:TOP;
 }
  #panel4 {
-padding-right:15;
 padding-left:15;
+padding-right:15;
 halign:LEFT;
 height:44;
-layout:hbox;
 background:#ffffff;
+layout:hbox;
 width:fill;
 valign:center;
 }

@@ -49,7 +49,14 @@ function com$ump$productquery$cm_productfilterController$searchcallback(sender, 
 	var visibleLoadMore=json.visibleLoadMore;
 	$id("listview0").set("visibleLoadMore",visibleLoadMore);
 }
+function com$ump$productquery$cm_productfilterController$doSearch(sender, args){
+	var searchfield = $id("search0").get("value");
+	$ctx.put("searchfield",searchfield);
+	$ctx.dataBind();
+	_$sys.callAction("doSearch");
+}
 com.ump.productquery.cm_productfilterController.prototype = {
+    doSearch : com$ump$productquery$cm_productfilterController$doSearch,
     initialize : com$ump$productquery$cm_productfilterController$initialize,
     evaljs : com$ump$productquery$cm_productfilterController$evaljs,
     searchcallback : com$ump$productquery$cm_productfilterController$searchcallback

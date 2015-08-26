@@ -43,32 +43,25 @@ function com$ump$productquery$detailgraphController$loadviewdata(sender, args){
 		$id("panel13").set("display","none");
 		$id("panel17").set("display","none");
 	}
-	var pk_factory = $param.getString("pk_factory");
-	var factoryname = $param.getString("factoryname");
-	var pk_material = $param.getString("pk_material");
-	var productname = $param.getString("productname");
-	var pk_accperiodmonth = $param.getString("pk_accperiodmonth");
-	var yearmonth = $param.getString("yearmonth");
-	var productinfodetails = $param.getString("productinfodetail");
-	var quantity = $param.getString("quantity");
-	var total = $param.getString("total");
-	var price = $param.getString("price");
-	var mesadoc = $param.getString("mesadoc");
-	var currtype = $param.getString("currtype");
 	var json = $ctx.getJSONObject();
-	json.pk_factory = pk_factory;
-	json.pk_material = pk_material;
-	json.pk_accperiodmonth = pk_accperiodmonth;
-	json.factoryname = factoryname;
-	json.productname = productname;
-	json.yearmonth = yearmonth;
-	json.quantity = quantity;
-	json.total = total;
-	json.price = price;
-	json.mesadoc = mesadoc;
-	json.currtype = currtype;
-	var concern = $param.getJSONObject("concern");
-	json.concern = concern;
+	var paramJson = $param.getJSONObject("json");
+	
+	var productinfodetails =paramJson.productinfodetails;
+	json.pk_factory = paramJson.pk_factory;
+	json.pk_material = paramJson.pk_material;
+	json.pk_accperiodmonth = paramJson.pk_accperiodmonth;
+	json.factoryname = paramJson.factoryname;
+	json.productname = paramJson.productname;
+	json.yearmonth = paramJson.yearmonth;
+	json.quantity = paramJson.quantity;
+	json.total = paramJson.total;
+	json.price = paramJson.price;
+	json.mesadoc = paramJson.mesadoc;
+	json.currtype = paramJson.currtype;
+	json.concern = paramJson.concern;
+	json.totalshowname = paramJson.totalshowname;
+	json.priceshowname = paramJson.priceshowname;
+	json.quantityshowname = paramJson.quantityshowname;
 	
 	if (typeof(productinfodetails) == 'undefined' || productinfodetails == null || productinfodetails == ""){
 		$toast("列表数据为空，没有图表数据!");

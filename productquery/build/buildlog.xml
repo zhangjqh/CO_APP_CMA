@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<buildlog><buildserver address="172.20.5.100:8080/ump"><app type="ios"><package>11745</package></app><app type="android"/></buildserver><buildserver address="mbs.yyuap.com:8080/ump"><app type="ios"><package>2234</package></app><app/></buildserver></buildlog>
+<buildlog><buildserver address="172.20.5.100:8080/ump"><app type="ios"><package>11777</package></app><app type="android"/></buildserver><buildserver address="mbs.yyuap.com:8080/ump"><app type="ios"><package>2234</package></app><app/></buildserver><buildserver address="10.2.112.31:8080/ump"><app type="ios"><package>6173</package></app></buildserver></buildlog>

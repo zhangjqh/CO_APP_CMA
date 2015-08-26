@@ -45,13 +45,7 @@ public class Cm_factoryctxExtendController extends Cm_factoryctxController
     	String appid = "38300306"; 
 		String serviceid = "getFactoryListByKeyWord";
 		
-		String type = (String) argsMap.get("style");
-    	if ("ios".equals(type)){
-    		json.put("searchfield", argsMap.get("searchText"));
-    	}else{
-    		json.put("searchfield", argsMap.get("searchfield"));
-    	}
-		argsMap.put("keyword", json.opt("searchfield"));
+    	
 		String current_pk_factory = (String) argsMap.get("current_pk_factory");
 		String lastusedfactoryString = String.valueOf(argsMap.get("lastusedfactorystr")) ;
 		if ("".equals(lastusedfactoryString)) {

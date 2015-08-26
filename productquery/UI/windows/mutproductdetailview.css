@@ -14,13 +14,13 @@ width:fill;
 valign:TOP;
 }
  #navigatorbar0 {
-padding-left:8;
 padding-right:8;
+padding-left:8;
 halign:LEFT;
 height:44.0;
 color:#000000;
-layout:hbox;
 font-size:17;
+layout:hbox;
 width:fill;
 font-family:default;
 valign:center;
@@ -64,16 +64,16 @@ background-image:pie_btn.png;
  #panel10 {
 halign:LEFT;
 height:70;
-background:#f8f8f8;
 layout:hbox;
+background:#f8f8f8;
 width:fill;
 valign:center;
 }
  #panel9 {
 halign:center;
 height:fill;
-background:#f8f8f8;
 layout:vbox;
+background:#f8f8f8;
 width:70;
 valign:TOP;
 }
@@ -86,16 +86,16 @@ padding-right:15;
 halign:left;
 height:fill;
 weight:1;
-background:#f8f8f8;
 layout:vbox;
+background:#f8f8f8;
 width:0;
 valign:TOP;
 }
  #panel8 {
 halign:LEFT;
 height:35;
-background:#f8f8f8;
 layout:hbox;
+background:#f8f8f8;
 width:fill;
 valign:top;
 }
@@ -104,34 +104,10 @@ margin-right:8;
 halign:LEFT;
 height:fill;
 widthWrap:120.0;
-background:#f8f8f8;
 layout:hbox;
+background:#f8f8f8;
 width:wrap;
 valign:top;
-}
- #label13 {
-halign:center;
-height:wrap;
-widthWrap:126.0;
-color:#000000;
-heightWrap:20.0;
-font-size:14;
-width:wrap;
-font-family:default;
-display:none;
-valign:center;
-}
- #label16 {
-halign:center;
-height:wrap;
-widthWrap:34.0;
-color:#000000;
-heightWrap:20.0;
-font-size:14;
-width:wrap;
-font-family:default;
-display:none;
-valign:center;
 }
  #label1 {
 halign:left;
@@ -147,8 +123,8 @@ valign:center;
  #panel12 {
 halign:LEFT;
 height:fill;
-background:#f8f8f8;
 layout:hbox;
+background:#f8f8f8;
 width:50;
 valign:top;
 }
@@ -169,8 +145,8 @@ background-image:compare_btn.png;
  #panel1 {
 halign:LEFT;
 height:35;
-layout:hbox;
 background:#f8f8f8;
+layout:hbox;
 width:fill;
 valign:top;
 }
@@ -179,34 +155,10 @@ padding-right:8;
 halign:LEFT;
 height:fill;
 weight:1;
-background:#f8f8f8;
 layout:hbox;
+background:#f8f8f8;
 width:0;
 valign:top;
-}
- #label15 {
-halign:center;
-height:wrap;
-widthWrap:192.0;
-color:#000000;
-heightWrap:20.0;
-font-size:14;
-width:wrap;
-font-family:default;
-display:none;
-valign:center;
-}
- #label14 {
-halign:center;
-height:wrap;
-widthWrap:134.0;
-color:#000000;
-heightWrap:20.0;
-font-size:14;
-width:wrap;
-font-family:default;
-display:none;
-valign:center;
 }
  #label2 {
 halign:left;
@@ -222,8 +174,8 @@ valign:center;
  #panel14 {
 halign:LEFT;
 height:fill;
-background:#f8f8f8;
 layout:hbox;
+background:#f8f8f8;
 width:104;
 valign:top;
 }
@@ -273,32 +225,32 @@ margin-right:15;
 halign:center;
 height:1;
 color:#c7c7c7;
-font-size:14;
 background:#d2d2d2;
+font-size:14;
 width:fill;
 margin-left:20;
 font-family:default;
 valign:center;
 }
  #panel3 {
-padding-right:15;
 padding-left:15;
+padding-right:15;
 padding-top:5;
 halign:LEFT;
 height:100;
-layout:hbox;
 background:#f8f8f8;
+layout:hbox;
 width:fill;
 valign:center;
 padding-bottom:5;
 }
  #panel5 {
-padding-right:5;
 padding-left:5;
+padding-right:5;
 halign:center;
 height:fill;
-layout:vbox;
 background:#f8f8f8;
+layout:vbox;
 width:84;
 valign:TOP;
 }
@@ -323,8 +275,8 @@ valign:center;
 halign:center;
 height:1;
 color:#000000;
-background:#d2d2d2;
 font-size:14;
+background:#d2d2d2;
 width:fill;
 font-family:default;
 valign:center;
@@ -349,8 +301,8 @@ valign:center;
 halign:center;
 height:1;
 color:#000000;
-background:#d2d2d2;
 font-size:14;
+background:#d2d2d2;
 width:fill;
 font-family:default;
 valign:center;
@@ -375,8 +327,8 @@ valign:center;
  #panel7 {
 halign:center;
 height:fill;
-background:#d2d2d2;
 layout:vbox;
+background:#d2d2d2;
 width:1;
 margin-top:6;
 valign:TOP;
@@ -385,8 +337,8 @@ valign:TOP;
 padding-left:5;
 halign:center;
 height:fill;
-layout:vbox;
 background:#f8f8f8;
+layout:vbox;
 width:fill;
 valign:TOP;
 }
@@ -397,33 +349,12 @@ layout:hbox;
 width:fill;
 valign:center;
 }
- #label22 {
-halign:center;
-height:20;
-weight:1;
-color:#000000;
-font-size:16;
-width:0;
-font-family:default;
-valign:center;
-}
- #label11 {
-halign:center;
-height:fill;
-widthWrap:20.0;
-color:#0852a5;
-font-size:16;
-width:wrap;
-font-family:default;
-valign:center;
-}
  #label12 {
-halign:left;
+halign:right;
 height:fill;
-widthWrap:50.0;
 color:#0852a5;
 font-size:16;
-width:wrap;
+width:fill;
 font-family:default;
 valign:center;
 }
@@ -431,8 +362,8 @@ valign:center;
 halign:center;
 height:1;
 color:#000000;
-background:#d2d2d2;
 font-size:14;
+background:#d2d2d2;
 width:fill;
 font-family:default;
 valign:center;
@@ -444,33 +375,12 @@ layout:hbox;
 width:fill;
 valign:center;
 }
- #label23 {
-halign:center;
-height:20;
-weight:1;
-color:#000000;
-font-size:14;
-width:0;
-font-family:default;
-valign:center;
-}
  #label8 {
-halign:left;
+halign:right;
 height:fill;
-widthWrap:80.0;
 color:#000000;
 font-size:16;
-width:wrap;
-font-family:default;
-valign:center;
-}
- #label9 {
-halign:center;
-height:fill;
-widthWrap:20.0;
-color:#000000;
-font-size:16;
-width:wrap;
+width:fill;
 font-family:default;
 valign:center;
 }
@@ -478,8 +388,8 @@ valign:center;
 halign:center;
 height:1;
 color:#000000;
-background:#d2d2d2;
 font-size:14;
+background:#d2d2d2;
 width:fill;
 font-family:default;
 valign:center;
@@ -491,33 +401,12 @@ layout:hbox;
 width:fill;
 valign:center;
 }
- #label24 {
-halign:center;
-height:20;
-weight:1;
-color:#000000;
-font-size:14;
-width:0;
-font-family:default;
-valign:center;
-}
- #label5 {
-halign:right;
-height:fill;
-widthWrap:20.0;
-color:#0852a5;
-font-size:16;
-width:wrap;
-font-family:default;
-valign:center;
-}
  #label6 {
 halign:right;
 height:fill;
-widthWrap:72.0;
 color:#0852a5;
 font-size:16;
-width:wrap;
+width:fill;
 font-family:default;
 valign:center;
 }
@@ -525,8 +414,8 @@ valign:center;
 halign:center;
 height:1;
 color:#c7c7c7;
-font-size:14;
 background:#c7c7c7;
+font-size:14;
 width:fill;
 font-family:default;
 valign:center;

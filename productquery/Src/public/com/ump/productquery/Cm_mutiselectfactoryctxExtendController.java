@@ -33,17 +33,11 @@ public class Cm_mutiselectfactoryctxExtendController extends Cm_mutiselectfactor
 //		int pagesize = Integer.parseInt(jsonObj.getString("count"));
     	JSONObject json = new JSONObject();
     	
-    	String type = (String) argsMap.get("style");
-    	if ("ios".equals(type)){
-    		json.put("searchfield", argsMap.get("searchText"));
-    	}else{
-    		json.put("searchfield", argsMap.get("searchfield"));
-    	}
-    	argsMap.put("keyword", json.opt("searchfield"));
+    	
     	String appid = "38300306"; 
 		String serviceid = "getFactoryListByKeyWord";
 		
-		String lastusedfactoryString = (String) argsMap.get("lastusedfactorystr");
+		String lastusedfactoryString = String.valueOf(argsMap.get("lastusedfactorystr")) ;
 		if ("".equals(lastusedfactoryString)) {
 		      lastusedfactoryString = "[]";
 		    }

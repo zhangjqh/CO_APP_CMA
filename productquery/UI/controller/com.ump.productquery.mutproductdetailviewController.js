@@ -56,7 +56,18 @@ function com$ump$productquery$mutproductdetailviewController$loadDetail(sender, 
 	}
 	_$sys.callAction('loadProductDetailInfo');
 }
+function com$ump$productquery$mutproductdetailviewController$openDetailGraph(sender, args){
+	var json = $ctx.getJSONObject();
+	$view.open({
+		"viewid" : "com.ump.productquery.Detailgraph",//目标页面（首字母大写）全名，
+		"isKeep" : "false",//保留当前页面不关闭
+		json : json,
+		sourcepage : $param.getString("sourcepage"),
+		selectindex : $param.getString("selectindex")
+	});
+}
 com.ump.productquery.mutproductdetailviewController.prototype = {
+    openDetailGraph : com$ump$productquery$mutproductdetailviewController$openDetailGraph,
     loadDetail : com$ump$productquery$mutproductdetailviewController$loadDetail,
     initialize : com$ump$productquery$mutproductdetailviewController$initialize,
     evaljs : com$ump$productquery$mutproductdetailviewController$evaljs,

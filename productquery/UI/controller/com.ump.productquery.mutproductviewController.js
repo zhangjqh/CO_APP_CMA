@@ -126,15 +126,38 @@ function com$ump$productquery$mutproductviewController$onload(sender, args){
 }
 function com$ump$productquery$mutproductviewController$concern(sender,args){
 	var row = $id('listview0').get("row");
-	var productlist = stringToJSON(row);
+	row = stringToJSON(row);
+	var json = $ctx.getJSONObject();
+	var productlist = json.productlist;
+	var param;
+	for (var i = 0;i < productlist.length;i++){
+		if (row.pk_material == productlist[i].pk_material){
+			param = productlist[i];
+			break;
+		}
+	}
 	var params = {
 		viewid : "com.ump.productquery.MutproductqueryctxExtendController",
 		action : "doOrCancelConcernProduct",
 		autoDataBinding : "true",
 		contextmapping : "productlist[#{cursor.cursorproductlistalias.index}]",
-		productlist : productlist
+		productlist : param,
+		callback : "this.concernCallback()",
+		error : "this.concernCallback()"
 	}
+	$js.showLoadingBar();
 	$service.call('UMService.callAction',jsonToString(params),false);
+}
+function com$ump$productquery$mutproductviewController$concernCallback(sender,args){
+	$js.hideLoadingBar();
+	var deviceinfo = $device.getDeviceInfo();
+    deviceinfo = $stringToJSON(deviceinfo);
+    var os = deviceinfo.os;
+    if (os == "ios"){
+       //ios有bug
+       //重新查一遍
+       _$sys.callAction('getProductListFirstPage');
+    }
 }
 function com$ump$productquery$mutproductviewController$openmenu(sender, args){
 	var dropdownlist =[];
@@ -311,7 +334,7 @@ function com$ump$productquery$mutproductviewController$updatebyuserid(sender,arg
 	//根据全局变量中获取的用户ID初始化Home主页界面。
 	var uid = $ctx.getApp("userid");
 	//如果在系统设置中退出了登录需要跳转到登陆页面
-	var from = $param.getString("from");
+	var from = $param.getString("exitfrom");
 	if(!uid || "" == uid || "exit"==from){
 		var open = {
 			isKeep : "false",
@@ -325,7 +348,16 @@ function com$ump$productquery$mutproductviewController$updatebyuserid(sender,arg
 	}
 }
 
+function com$ump$productquery$mutproductviewController$onDateChange(sender, args){
+	var date = args.newvalue;
+	date = date.substring(0,7);
+	$ctx.put("yearmonth",date);
+	$ctx.dataBind();
+	$js.showLoadingBar();
+	_$sys.callAction('getProductListFirstPage')
+}
 com.ump.productquery.mutproductviewController.prototype = {
+    onDateChange : com$ump$productquery$mutproductviewController$onDateChange,
     loadall : com$ump$productquery$mutproductviewController$loadall,
     loadmyconcern : com$ump$productquery$mutproductviewController$loadmyconcern,
     openmenu : com$ump$productquery$mutproductviewController$openmenu,
@@ -341,7 +373,8 @@ com.ump.productquery.mutproductviewController.prototype = {
     orderbycodeup : com$ump$productquery$mutproductviewController$orderbycodeup,
     orderbycodedown : com$ump$productquery$mutproductviewController$orderbycodedown,
     openDetailCallBack : com$ump$productquery$mutproductviewController$openDetailCallBack,
-    updatebyuserid : com$ump$productquery$mutproductviewController$updatebyuserid
+    updatebyuserid : com$ump$productquery$mutproductviewController$updatebyuserid,
+    concernCallback : com$ump$productquery$mutproductviewController$concernCallback
 };
 com.ump.productquery.mutproductviewController.registerClass('com.ump.productquery.mutproductviewController',UMP.UI.Mvc.Controller);
 }catch(e){$e(e);}

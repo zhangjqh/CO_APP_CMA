@@ -39,10 +39,11 @@ function com$ump$productquery$Factory_referlistController$load_reflist(sender, a
 	var lastusedfactory = $cache.read("lastusedfactory");
 	$ctx.put("lastusedfactorystr",jsonToString(lastusedfactory));
 	$ctx.dataBind();
+	var searchtext = $id("search0").get("value");
 	var params = {
 		current_pk_factory : $param.getString("current_pk_factory"),
 		lastusedfactorystr : $ctx.getString("lastusedfactorystr"),
-		searchfield : $ctx.getString("searchfield")
+		keyword : searchtext
 	}
 	$service.callAction({
 		"viewid" : "com.ump.productquery.Cm_factoryctxExtendController",//后台带包名的Controller名

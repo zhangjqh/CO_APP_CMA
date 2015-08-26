@@ -76,6 +76,9 @@ public class Cm_unitcostctxExtendController extends Cm_unitcostctxController {
 		json.put("quantity", CMMobileNumberFormatUtils.getInstance().format(headitems.get("quantity")));
 		json.put("currtype", headitems.get("currtype"));
 		json.put("mesadoc", headitems.get("measdoc"));
+		json.put("totalshowname", json.optString("currtype") + json.optString("total") );
+		json.put("quantityshowname", json.optString("quantity") + json.optString("mesadoc") );
+		json.put("priceshowname", json.optString("currtype") + json.optString("price") );
 		
 		String detailcurrtype = json.getString("currtype");
 		retObj.remove(0);

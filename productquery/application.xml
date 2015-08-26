@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<application id="38300306" appname="成本+" versionCode="12" versionName="1.2.0" icon="app" theme="ios7" package="com.ump.productquery" language="zh_cn" isLibrary="false" autoCheckUpdate="false" jsengine="v2.0"> 
+<application id="38300306" appname="成本+" versionCode="1.2.0" versionName="1.2.0" icon="app" theme="ios7" package="com.ump.productquery" language="zh_cn" isLibrary="false" autoCheckUpdate="false" jsengine="v2.0"> 
   <permission id="internet"/>  
   <start view="Productquery_login"/>  
   <!--view id="demo" ref="demo.dsl"><extend screenOrientation="landscape|portrait|unspecified"/></view-->  
@@ -38,8 +37,7 @@
   <view id="Factory_referlist" ref="Factory_referlist.mref" include="true"/>  
   <view id="MultiFactory_referlist" ref="MultiFactory_referlist.mref" include="true"/>  
   <view id="MultiAccperiod_referlist" ref="MultiAccperiod_referlist.mref" include="true"/> 
-</application>
-<!--
+</application><!--
 screenOrientation
 屏幕显示方向 
 landscape: 横向

@@ -44,6 +44,7 @@ function com$ump$productquery$cm_mutiperiodviewController$clickListRow(sender, a
 		$toast("所选行无明细数据");
 		return;
 	}
+	_$sys.callAction('openProductDetailInfoView');
 }
 com.ump.productquery.cm_mutiperiodviewController.prototype = {
     clickListRow : com$ump$productquery$cm_mutiperiodviewController$clickListRow,

@@ -39,7 +39,21 @@ function com$ump$productquery$MultiFactory_referlistController$load_reflist(send
 	var lastusedfactory = $cache.read("lastusedfactory");
 	$ctx.put("lastusedfactorys",jsonToString(lastusedfactory));
 	$ctx.dataBind();
-	_$sys.callAction('loaddata');
+	var searchfield = $id("search0").get("value");
+	var params = {
+		lastusedfactorystr : lastusedfactory,
+		refresultstr : $param.getString("refresultstr"),
+		keyword : searchfield
+	}
+	$service.callAction({
+		"viewid" : "com.ump.productquery.Cm_mutiselectfactoryctxExtendController",//后台带包名的Controller名
+		"action" : "factoryCompareSelect",//方法名,
+		"params" : params,//自定义参数
+		"autoDataBinding" : true,//请求回来会是否进行数据绑定，默认不绑定
+		"contextmapping" : "",//将返回结果映射到指定的Context字段上，默认为替换整个Context
+		"callback" : "this.scrolltofisrtselectedindex()",//请求回来后执行的js方法
+		"error" : ""//失败回调的js方法
+	})
 }
 function com$ump$productquery$MultiFactory_referlistController$scrolltofisrtselectedindex(sender,args){
 	var index=$ctx.getString("fisrtselectedindex");

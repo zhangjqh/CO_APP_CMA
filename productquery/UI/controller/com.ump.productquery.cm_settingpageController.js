@@ -35,9 +35,29 @@ function com$ump$productquery$cm_settingpageController$initialize(){
 function com$ump$productquery$cm_settingpageController$evaljs(js){
     eval(js)
 }
+function com$ump$productquery$cm_settingpageController$exitOk(sender,args){
+	//退出登录需要清空当前全局变量中的用户信息，还需要清空config中的用户信息，然后隐藏退出按钮
+	/*var jsonApp = {
+			userid : ""
+		}*/
+		
+	//$ctx.setApp(jsonApp);
+	
+	var writeObj = {
+		password : ""
+	};
+	
+	var writeJsonString = $jsonToString(writeObj);	
+	UM_NativeCall.callService("UMService.writeConfigure", writeJsonString);
+	$view.close({
+		"resultCode" : "15",
+		"exitfrom" : "exit"
+	})
+}
 com.ump.productquery.cm_settingpageController.prototype = {
     initialize : com$ump$productquery$cm_settingpageController$initialize,
-    evaljs : com$ump$productquery$cm_settingpageController$evaljs
+    evaljs : com$ump$productquery$cm_settingpageController$evaljs,
+    exitOk : com$ump$productquery$cm_settingpageController$exitOk
 };
 com.ump.productquery.cm_settingpageController.registerClass('com.ump.productquery.cm_settingpageController',UMP.UI.Mvc.Controller);
 }catch(e){$e(e);}

@@ -14,13 +14,13 @@ width:fill;
 valign:TOP;
 }
  #navigatorbar0 {
-padding-left:8;
 padding-right:8;
+padding-left:8;
 halign:LEFT;
 height:44.0;
 color:#000000;
-layout:hbox;
 font-size:17;
+layout:hbox;
 width:fill;
 font-family:default;
 valign:center;
@@ -70,30 +70,19 @@ valign:TOP;
  #panel1 {
 halign:LEFT;
 height:44;
-layout:hbox;
 background:#ffffff;
+layout:hbox;
 width:fill;
 valign:center;
 }
  #panel2 {
-padding-left:19;
 padding-right:15;
+padding-left:19;
 halign:LEFT;
 height:44;
-layout:hbox;
 background:#ffffff;
+layout:hbox;
 width:fill;
-valign:center;
-}
- #label3 {
-halign:center;
-height:wrap;
-color:#000000;
-heightWrap:20.0;
-font-size:14;
-width:30;
-font-family:default;
-display:none;
 valign:center;
 }
  #label4 {
@@ -101,8 +90,8 @@ halign:left;
 height:fill;
 weight:1;
 color:#000000;
-background:#ffffff;
 font-size:16;
+background:#ffffff;
 width:0;
 font-family:default;
 valign:center;
@@ -115,8 +104,8 @@ width:8;
 halign:center;
 height:1;
 color:#c7c7c7;
-background:#c7c7c7;
 font-size:14;
+background:#c7c7c7;
 width:fill;
 font-family:default;
 valign:center;
@@ -124,8 +113,8 @@ valign:center;
  #panel3 {
 halign:LEFT;
 height:44;
-background:#ffffff;
 layout:hbox;
+background:#ffffff;
 width:fill;
 margin-top:1;
 valign:center;
@@ -133,27 +122,16 @@ valign:center;
  #panel4 {
 halign:LEFT;
 height:44;
-background:#ffffff;
 layout:hbox;
+background:#ffffff;
 width:fill;
-valign:center;
-}
- #label8 {
-halign:center;
-height:wrap;
-color:#000000;
-heightWrap:20.0;
-font-size:14;
-width:30;
-font-family:default;
-display:none;
 valign:center;
 }
  #panel7 {
 halign:center;
 height:fill;
-background:#ffffff;
 layout:vbox;
+background:#ffffff;
 width:45;
 valign:TOP;
 }
@@ -170,57 +148,22 @@ font-pressed-color:#f2adb2;
 valign:center;
 background-image:left_nc.png;
 }
- #label5 {
-halign:center;
-height:wrap;
-color:#000000;
-heightWrap:20.0;
-font-size:14;
-width:12.0;
-font-family:default;
-display:none;
-valign:center;
-}
- #label10 {
-halign:center;
-height:wrap;
-color:#000000;
-heightWrap:20.0;
-font-size:14;
-width:12.0;
-font-family:default;
-display:none;
-valign:center;
-}
- #label9 {
-halign:center;
-height:fill;
-weight:1;
-color:#000000;
-background:#ffffff;
-font-size:16;
-width:0;
-font-family:default;
-display:none;
-font-weight:bold;
-valign:center;
-}
  #dateinput0 {
 padding-left:4;
 halign:CENTER;
 height:44;
 weight:1;
 color:#000000;
-background:#ffffff;
 font-size:17;
+background:#ffffff;
 width:0;
 font-family:default;
 }
  #panel8 {
 halign:center;
 height:fill;
-background:#ffffff;
 layout:vbox;
+background:#ffffff;
 width:45;
 valign:TOP;
 }
@@ -241,8 +184,8 @@ background-image:right_nc.png;
 halign:center;
 height:1;
 color:#c7c7c7;
-background:#c7c7c7;
 font-size:14;
+background:#c7c7c7;
 width:fill;
 font-family:default;
 valign:center;
@@ -320,8 +263,8 @@ icon-text-spacing:3;
 halign:center;
 height:1;
 color:#c7c7c7;
-background:#c7c7c7;
 font-size:14;
+background:#c7c7c7;
 width:fill;
 font-family:default;
 valign:center;

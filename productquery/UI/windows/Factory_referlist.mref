@@ -10,7 +10,7 @@
             <label id="label0">工厂</label>
             <input id="button1" visible="false" value="按钮" type="button"/> 
         </navigatorbar>
-        <search id="search0" bindField="searchfield" placeholder="请输入关键字" localstorage="true" onsearch="this.onSearch()"/>
+        <search id="search0" placeholder="请输入关键字" localstorage="true" onsearch="this.onSearch()"/>
         <listView id="listviewdefine0" bindfield="grouplist,org_factorylist" cursorAction="cursorreflistalias" syncContext="reflist" onitemclick="this.onClickListRow()">
             <div id="panel0">
                 <label id="label5" bindfield="factorygroupname">label</label> 
