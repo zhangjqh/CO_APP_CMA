@@ -1,7 +1,7 @@
 package nc.cm.mobile.itf;
 
 public interface IMutiProductQueryConst {
-	public static final String APPID = "38300306";
+	public static final String APPID = "38300306.nc.yonyou.com";
 	
     public static final String ORDERBYTYPE_UP = "asc";
 

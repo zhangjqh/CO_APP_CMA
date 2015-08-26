@@ -2,6 +2,7 @@ package com.ump.productquery;
 
 import java.util.*;
 
+import nc.cm.mobile.itf.IMutiProductQueryConst;
 import nc.vo.jcom.lang.StringUtil;
 
 import org.json.*;
@@ -42,7 +43,7 @@ public class Cm_factoryctxExtendController extends Cm_factoryctxController
 //		int pagesize = Integer.parseInt(jsonObj.getString("count"));
     	JSONObject json = new JSONObject();
     	
-    	String appid = "38300306"; 
+    	String appid = IMutiProductQueryConst.APPID; 
 		String serviceid = "getFactoryListByKeyWord";
 		
     	

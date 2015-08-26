@@ -2,6 +2,7 @@ package com.ump.productquery;
 
 import java.util.*;
 
+import nc.cm.mobile.itf.IMutiProductQueryConst;
 import nc.vo.jcom.lang.StringUtil;
 
 import org.json.*;
@@ -36,7 +37,7 @@ public class Cm_mutiselectperiodctxExtendController extends Cm_mutiselectperiodc
     		String[] yearmonths = refresultstr.split(",");
     		yearmonthsSet.addAll(Arrays.asList(yearmonths));
     	}
-    	String appid = "38300306"; 
+    	String appid = IMutiProductQueryConst.APPID; 
 		String serviceid = "getAccperiodListByPK_factory";
 		
 		IGatewayService service = GatewayServiceFactory.findGatewayService(appid, serviceid, argsMap);

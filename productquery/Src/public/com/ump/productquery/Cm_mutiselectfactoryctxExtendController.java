@@ -2,6 +2,7 @@ package com.ump.productquery;
 
 import java.util.*;
 
+import nc.cm.mobile.itf.IMutiProductQueryConst;
 import nc.vo.jcom.lang.StringUtil;
 
 import org.json.*;
@@ -34,7 +35,7 @@ public class Cm_mutiselectfactoryctxExtendController extends Cm_mutiselectfactor
     	JSONObject json = new JSONObject();
     	
     	
-    	String appid = "38300306"; 
+    	String appid =IMutiProductQueryConst.APPID; 
 		String serviceid = "getFactoryListByKeyWord";
 		
 		String lastusedfactoryString = String.valueOf(argsMap.get("lastusedfactorystr")) ;

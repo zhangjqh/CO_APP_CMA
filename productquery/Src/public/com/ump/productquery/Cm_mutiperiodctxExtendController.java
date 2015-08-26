@@ -46,7 +46,7 @@ public class Cm_mutiperiodctxExtendController extends Cm_mutiperiodctxController
 	    	argsMap.remove("orderby");
 	    	argsMap.put("orderby", new String[]{orderby,orderbytype});
 	    }
-    	String appid = "38300306"; 
+    	String appid = IMutiProductQueryConst.APPID;  
 		String serviceid = "getMutiPeriodListByPk_materialAndPk_factory";
 		JSONObject json = new JSONObject();
 		json.put("orderby", orderby);

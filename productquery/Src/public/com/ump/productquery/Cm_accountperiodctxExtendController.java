@@ -2,6 +2,8 @@ package com.ump.productquery;
 
 import java.util.*;
 
+import nc.cm.mobile.itf.IMutiProductQueryConst;
+
 import org.json.*;
 
 import com.yonyou.uap.um.context.util.*;
@@ -39,7 +41,7 @@ public class Cm_accountperiodctxExtendController extends Cm_accountperiodctxCont
 //		int pagesize = Integer.parseInt(jsonObj.getString("count"));
     	JSONObject json = new JSONObject();
 		
-    	String appid = "38300306"; 
+    	String appid = IMutiProductQueryConst.APPID; 
 		String serviceid = "getAccperiodListByPK_factory";
 		
 		IGatewayService service = GatewayServiceFactory.findGatewayService(appid, serviceid, argsMap);

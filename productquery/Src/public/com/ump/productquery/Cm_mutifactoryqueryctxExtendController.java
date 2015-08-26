@@ -53,7 +53,7 @@ public class Cm_mutifactoryqueryctxExtendController extends Cm_mutifactoryqueryc
 	    	argsMap.remove("orderby");
 	    	argsMap.put("orderby", new String[]{orderby,orderbytype});
 	    }
-    	String appid = "38300306"; 
+    	String appid = IMutiProductQueryConst.APPID; 
 		String serviceid = "getMutiFactoryListByPk_materialAndYearMonth";
 		JSONObject json = new JSONObject();
 		json.put("orderby", orderby);

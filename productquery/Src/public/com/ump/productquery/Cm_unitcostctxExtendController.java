@@ -40,7 +40,7 @@ public class Cm_unitcostctxExtendController extends Cm_unitcostctxController {
 		json.put("yearmonth", argsMap.get("yearmonth"));
 		json.put("pk_material", argsMap.get("pk_material"));
 		json.put("productname", argsMap.get("productname"));
-		String appid = "38300306";
+		String appid = IMutiProductQueryConst.APPID; 
 		String serviceid = "getProductDetailInfoByParams";
 		IGatewayService service = GatewayServiceFactory.findGatewayService(
 				appid, serviceid, argsMap);
@@ -160,7 +160,7 @@ public class Cm_unitcostctxExtendController extends Cm_unitcostctxController {
 		JSONObject jsonObj = new JSONObject(args);
     	Map argsMap = UmContextUtil.transJsonToMap(jsonObj);
     	JSONObject productjsonObj = new JSONObject();
-    	String appid = "38300306";
+    	String appid = IMutiProductQueryConst.APPID; 
     	String serviceid = "doOrCancelConcernProduct";
     	argsMap.put("currentState", argsMap.get("state"));
     	IGatewayService service = GatewayServiceFactory.findGatewayService(appid, serviceid, argsMap);

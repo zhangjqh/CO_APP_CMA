@@ -2,6 +2,7 @@ package com.ump.productquery;
 
 import java.util.*;
 
+import nc.cm.mobile.itf.IMutiProductQueryConst;
 import nc.vo.jcom.lang.StringUtil;
 
 import org.json.*;
@@ -31,7 +32,7 @@ public class Cm_productctxExtendController extends Cm_productctxController
     	Map argsMap = UmContextUtil.transJsonToMap(jsonObj);
     	int startline = Integer.parseInt(jsonObj.getString("startline"));
 		int pagesize = Integer.parseInt(jsonObj.getString("count"));
-    	String appid = "38300306";
+    	String appid = IMutiProductQueryConst.APPID; 
     	String serviceid = "searchProductByKeyWord";
     	IGatewayService service = GatewayServiceFactory.findGatewayService(appid, serviceid, argsMap);
     	JSONObject json = new JSONObject();

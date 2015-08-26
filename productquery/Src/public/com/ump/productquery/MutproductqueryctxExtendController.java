@@ -145,7 +145,7 @@ public class MutproductqueryctxExtendController extends MutproductqueryctxContro
      	json.put("orderbytype", orderbytype);
      	json.put("orderby", orderby);
     	json.put("displaytype", argsMap.get("displaytype"));
-    	String appid = "38300306";
+    	String appid = IMutiProductQueryConst.APPID; 
     	String serviceid = "getPrevOrNextYearMonth";
     	IGatewayService service = GatewayServiceFactory.findGatewayService(appid, serviceid, argsMap);
     	try{
@@ -203,7 +203,7 @@ public class MutproductqueryctxExtendController extends MutproductqueryctxContro
     	int startline = Integer.parseInt(jsonObj.getString("startline"));
 		int pagesize = Integer.parseInt(jsonObj.getString("count"));
     	JSONObject json = new JSONObject();
-    	String appid = "38300306";
+    	String appid = IMutiProductQueryConst.APPID; 
     	String serviceid = "getDefaultFactoryAndPeriodByCurrtentUser";
     	IGatewayService service = GatewayServiceFactory.findGatewayService(appid, serviceid, argsMap);
     	List<Map<String,String>> retObj = (List<Map<String,String>>) service.doService();
@@ -264,7 +264,7 @@ public class MutproductqueryctxExtendController extends MutproductqueryctxContro
     	Map productlistargsMap = UmContextUtil.transJsonToMap(productjsonObj);
     	argsMap.put("currentState", productlistargsMap.get("currentState"));
     	argsMap.put("pk_material",productlistargsMap.get("pk_material"));
-    	String appid = "38300306";
+    	String appid = IMutiProductQueryConst.APPID; 
     	String serviceid = "doOrCancelConcernProduct";
     	IGatewayService service = GatewayServiceFactory.findGatewayService(appid, serviceid, argsMap);
     	Map<String,String> retObj = (Map<String,String>) service.doService();
@@ -289,7 +289,7 @@ public class MutproductqueryctxExtendController extends MutproductqueryctxContro
     	Map argsMap = UmContextUtil.transJsonToMap(jsonObj);
     	JSONObject json = new JSONObject();
 		
-    	String appid = "38300306"; 
+    	String appid =IMutiProductQueryConst.APPID; 
 		String serviceid = "getAccperiodListByPK_factory";
 		
 		IGatewayService service = GatewayServiceFactory.findGatewayService(appid, serviceid, argsMap);
