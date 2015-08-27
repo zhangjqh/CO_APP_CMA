@@ -40,7 +40,7 @@ public class Productquery_loginExtendActivity extends Productquery_loginActivity
 		MaUpdateAgent.updateVersion(this);
 		//企业+跳转登陆处理
 		if (flag){
-			NCConnectWithMaPlusUtil.connectWithMaPlus(this, idmap.get("userName"), idmap.get("passWord"));
+			NCConnectWithMaPlusUtil.connectWithMaPlus(this, idmap.get("textbox0"), idmap.get("textbox1"));
 		}
 	}
 	
