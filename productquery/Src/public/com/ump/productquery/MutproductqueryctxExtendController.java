@@ -209,10 +209,10 @@ public class MutproductqueryctxExtendController extends MutproductqueryctxContro
     	List<Map<String,String>> retObj = (List<Map<String,String>>) service.doService();
     	List<Map<String,String>> entryList = new ArrayList<Map<String,String>>();
 		for(Map<String,String> map : retObj){
+			
 			entryList.add(map);
 		}
 		Map<String,String> headitems = entryList.get(0);
-		
 		json.put("displaytype", headitems.get("displaytype"));
 		json.put("orderbytype", headitems.get("orderbytype"));
 		json.put("orderby", headitems.get("orderby"));
@@ -220,40 +220,48 @@ public class MutproductqueryctxExtendController extends MutproductqueryctxContro
 		json.put("factoryname", headitems.get("factoryname"));
 		json.put("pk_accperiodmonth", headitems.get("pk_accperiodmonth"));
 		json.put("yearmonth", headitems.get("yearmonth"));
-		entryList.remove(0);
-		int len = entryList.size();
-		int arrLen = startline + pagesize - 1;
-		/** 控制显示查看更多 */
-		String visibleLoadMore = "true";
-		if (arrLen >= len) {
-			arrLen = len;
-			visibleLoadMore = "false";
+		
+		String resultCode = headitems.get("resultcode");
+		if ("fail".equals(resultCode)){
+			String msg = headitems.get("resultmsg");
+    		json.put("error_message", msg);
+    		return json.toString();
+		}else{
+			entryList.remove(0);
+			int len = entryList.size();
+			int arrLen = startline + pagesize - 1;
+			/** 控制显示查看更多 */
+			String visibleLoadMore = "true";
+			if (arrLen >= len) {
+				arrLen = len;
+				visibleLoadMore = "false";
+			}
+			json.put("visibleLoadMore", visibleLoadMore);
+			JSONArray productlist = new JSONArray();
+			for (int i = startline ; i <= arrLen; i++) {
+				Map<String,String> map = entryList.get(i - 1);
+				JSONObject productdata = new JSONObject();
+				//构造结果列表数据
+				productdata.put("cprodcostid", map.get("cprodcostid"));
+				productdata.put("pk_material", map.get("pk_material"));
+				productdata.put("code",map.get("code"));
+				productdata.put("name", map.get("name"));
+				String quantity = CMMobileNumberFormatUtils.getInstance().format(map.get("quantity"));
+				productdata.put("quantity",quantity);
+				productdata.put("total", CMMobileNumberFormatUtils.getInstance().format(map.get("total")));
+				productdata.put("currtype", map.get("currtype"));
+				String price = CMMobileNumberFormatUtils.getInstance().format(map.get("price"));
+				productdata.put("price", price);
+				productdata.put("mesadoc", map.get("mesadoc"));
+				productdata.put("currentState", map.get("currentState"));
+				productdata.put("quantityshowname", "产量:" + quantity + map.get("mesadoc"));
+				productdata.put("priceshowname", "单位成本:" + map.get("currtype") + price);
+				productlist.put(productdata);
+			}
+			json.put("productlist", productlist);
+			json.put("lastusedfactory", headitems.get("pk_factory"));
+	    	return json.toString();
 		}
-		json.put("visibleLoadMore", visibleLoadMore);
-		JSONArray productlist = new JSONArray();
-		for (int i = startline ; i <= arrLen; i++) {
-			Map<String,String> map = entryList.get(i - 1);
-			JSONObject productdata = new JSONObject();
-			//构造结果列表数据
-			productdata.put("cprodcostid", map.get("cprodcostid"));
-			productdata.put("pk_material", map.get("pk_material"));
-			productdata.put("code",map.get("code"));
-			productdata.put("name", map.get("name"));
-			String quantity = CMMobileNumberFormatUtils.getInstance().format(map.get("quantity"));
-			productdata.put("quantity",quantity);
-			productdata.put("total", CMMobileNumberFormatUtils.getInstance().format(map.get("total")));
-			productdata.put("currtype", map.get("currtype"));
-			String price = CMMobileNumberFormatUtils.getInstance().format(map.get("price"));
-			productdata.put("price", price);
-			productdata.put("mesadoc", map.get("mesadoc"));
-			productdata.put("currentState", map.get("currentState"));
-			productdata.put("quantityshowname", "产量:" + quantity + map.get("mesadoc"));
-			productdata.put("priceshowname", "单位成本:" + map.get("currtype") + price);
-			productlist.put(productdata);
-		}
-		json.put("productlist", productlist);
-		json.put("lastusedfactory", headitems.get("pk_factory"));
-    	return json.toString();
     }
     
     public String doOrCancelConcernProduct(String args) throws JSONException, GatewayServiceException{

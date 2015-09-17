@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gateway>
+	<!-- cm service start-->
+	<!-- 根据当前用户获得默认工厂期间及产品列表-->
+	<service id="getDefaultFactoryAndPeriodByCurrtentUser" provider="nclocator" method="getDefaultFactoryAndPeriodByCurrtentUser"
+		returntype="String">
+		<properties>		
+			<params>userid:String</params>
+			<interface>nc.cm.mobile.itf.ICMMobileService</interface>
+			<security>true</security>
+		</properties>
+		<ds-set>
+			<datasource name="mobile63" />
+		</ds-set>
+	</service>
+	<!-- 关注或取消关注产品-->
+	<service id="doOrCancelConcernProduct" provider="nclocator" method="doOrCancelConcernProduct"
+		returntype="String">
+		<properties>		
+			<params>currentState:String|userid:String|pk_material:String</params>
+			<interface>nc.cm.mobile.itf.ICMMobileService</interface>
+			<security>true</security>
+		</properties>
+		<ds-set>
+			<datasource name="mobile63" />
+		</ds-set>
+	</service>
+	<!-- 获取工厂参照，参数为用户ID-->
+	<service id="getFactoryList" provider="nclocator" method="getFactoryList"
+		returntype="String">
+		<properties>		
+			<params>userid:String</params>
+			<interface>nc.cm.mobile.itf.ICMMobileService</interface>
+			<security>true</security>
+		</properties>
+		<ds-set>
+			<datasource name="mobile63" />
+		</ds-set>
+	</service>
+	<!-- 获取工厂多选参照，参数为用户ID，支持关键字搜索-->
+	<service id="getFactoryListByKeyWord" provider="nclocator" method="getFactoryListByKeyWord"
+		returntype="String">
+		<properties>		
+			<params>userid:String|keyword:String</params>
+			<interface>nc.cm.mobile.itf.ICMMobileService</interface>
+			<security>true</security>
+		</properties>
+		<ds-set>
+			<datasource name="mobile63" />
+		</ds-set>
+	</service>
+	<!-- 根据工厂搜索产品，参数为用户ID，工厂,关键字-->
+	<service id="searchProductByKeyWord" provider="nclocator" method="searchProductByKeyWord"
+		returntype="String">
+		<properties>		
+			<params>userid:String|pk_factory:String|searchfield:String</params>
+			<interface>nc.cm.mobile.itf.ICMMobileService</interface>
+			<security>true</security>
+		</properties>
+		<ds-set>
+			<datasource name="mobile63" />
+		</ds-set>
+	</service>
+	<!-- 获取会计期间参照，参数为工厂-->
+	<service id="getAccperiodListByPK_factory" provider="nclocator" method="getAccperiodListByPK_factory"
+		returntype="String">
+		<properties>		
+			<params>pk_factory:String</params>
+			<interface>nc.cm.mobile.itf.ICMMobileService</interface>
+			<security>true</security>
+		</properties>
+		<ds-set>
+			<datasource name="mobile63" />
+		</ds-set>
+	</service>
+
+	<!-- 根据当前会计期间月PK和年月方向获得上下个期间及产品列表-->
+	<service id="getPrevOrNextYearMonth" provider="nclocator" method="getPrevOrNextYearMonth"
+		returntype="String">
+		<properties>		
+			<params>userid:String|pk_factory:String|pk_accperiodmonth:String|yearmonth:String|direction:String|orderby:String[]|displaytype:String</params>
+			<interface>nc.cm.mobile.itf.ICMMobileService</interface>
+			<security>true</security>
+		</properties>
+		<ds-set>
+			<datasource name="mobile63" />
+		</ds-set>
+	</service>
+	<!-- 根据工厂和期间获得产品列表-->
+	<service id="getProductListByPk_factoryAndAccepriod" provider="nclocator" method="getProductListByPk_factoryAndAccepriod"
+		returntype="String">
+		<properties>		
+			<params>userid:String|pk_factory:String|yearmonth:String|orderby:String[]|displaytype:String</params>
+			<interface>nc.cm.mobile.itf.ICMMobileService</interface>
+			<security>true</security>
+		</properties>
+		<ds-set>
+			<datasource name="mobile63" />
+		</ds-set>
+	</service>
+	<!-- 根据工厂期间产品获得产品明细构成-->
+	<service id="getProductDetailInfoByParams" provider="nclocator" method="getProductDetailInfoByCprodcostid"
+		returntype="String">
+		<properties>		
+			<params>userid:String|pk_org:String|yearmonth:String|pk_material:String|quantity:String</params>
+			<interface>nc.cm.mobile.itf.ICMMobileService</interface>
+			<security>true</security>
+		</properties>
+		<ds-set>
+			<datasource name="mobile63" />
+		</ds-set>
+	</service>
+	<!-- 多工厂对比-->
+	<service id="getMutiFactoryListByPk_materialAndYearMonth" provider="nclocator" method="getMutiFactoryListByPk_materialAndYearMonth"
+		returntype="String">
+		<properties>		
+			<params>pk_material:String|yearmonth:String|orderby:String[]</params>
+			<interface>nc.cm.mobile.itf.ICMMobileService</interface>
+			<security>true</security>
+		</properties>
+		<ds-set>
+			<datasource name="mobile63" />
+		</ds-set>
+	</service>
+	<!-- 多期间对比-->
+	<service id="getMutiPeriodListByPk_materialAndPk_factory" provider="nclocator" method="getMutiPeriodListByPk_materialAndPk_factory"
+		returntype="String">
+		<properties>		
+			<params>pk_material:String|pk_factory:String|orderby:String[]|yearmonths:String[]|lastpageyearmonth:String</params>
+			<interface>nc.cm.mobile.itf.ICMMobileService</interface>
+			<security>true</security>
+		</properties>
+		<ds-set>
+			<datasource name="mobile63" />
+		</ds-set>
+	</service>
+	<service id="ncLoginService" provider="nclocator" method="umLogin"
+			returntype="uap.vo.umobile.UMResult"  >
+			<properties>
+				<params>context:uap.vo.umobile.UMContext</params>
+				<interface>uap.itf.umoblie.IUapMoblieServ</interface>
+				<security>true</security>
+			</properties>
+			<ds-set>
+				<datasource name="mobile63" />
+			</ds-set>
+		</service>
+<!-- cm service end-->
+	<service id="localOrderService" provider="nclocator" method="getResult"
+		returntype="List"  >
+		<properties>
+			<params>groupId:String|userId:String|billId:String|startLine:int|count:int</params>
+			<interface>com.yonyou.uap.um.ma.test.pubitf.INCOrderService</interface>
+			<security>true</security>
+		</properties>
+		<ds-set>
+			<datasource name="mbp" />
+		</ds-set>
+	</service>
+	
+	<service id="localConfigService" provider="nclocator" method="getString"
+		returntype="String"  >
+		<properties>
+			<params>key:String</params>
+			<interface>com.yonyou.uap.um.ma.pubitf.IConfigService</interface>
+			<security>true</security>
+		</properties>
+		<ds-set>
+			<datasource name="mbp" />
+		</ds-set>
+	</service>
+	
+	<service id="localPosService" provider="nclocator" method="getPos"
+		returntype="List"  >
+		<properties>
+			<params>entity:com.yonyou.POEntity</params>
+			<interface>com.yonyou.uap.um.ma.pubitf.IConfigService</interface>
+			<security>true</security>
+		</properties>
+		<ds-set>
+			<datasource name="mbp" />
+		</ds-set>
+	</service>
+
+	
+</gateway>

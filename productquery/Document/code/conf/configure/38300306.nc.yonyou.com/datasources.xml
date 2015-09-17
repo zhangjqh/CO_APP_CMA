@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dsset>
+	<datasource id="nc63" isdefault="true">
+		<url>http://10.10.3.107:8080/</url>
+		<ncds>ncmobiledev</ncds>
+	</datasource>
+</dsset>
